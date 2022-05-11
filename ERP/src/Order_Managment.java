@@ -24,11 +24,11 @@ public class Order_Managment extends Thread{
 	public void run() {
 		// ################################# Creating array of Client Orders ########################################
 		System.out.println("Cheguei");
-    	int[] a = {1,1};
-    	int[] b = {1,1};
-    	int[] c = {1,1};
-    	int[] d = {1,1};
-    	String[] e = {"a","a"};
+    	//int[] a = {1,1};
+    	//int[] b = {1,1};
+    	//int[] c = {1,1};
+    	//int[] d = {1,1};
+    	//String[] e = {"a","a"};
     	
     	//Client_Order client_order_aux1 = new Client_Order("client_name", a, e, b, c, d, a);
     	//client_order[0] = client_order_aux1;
@@ -108,10 +108,10 @@ public class Order_Managment extends Thread{
                 	//System.out.println(earlyPen[i-7]);  	
                 }
                 Client_Order client_order_aux = new Client_Order(client_name, order_number, workPiece, quantity, dueDate, latePen, earlyPen);
-                barrier.await();
+                //barrier.await();
                 client_order[index] = client_order_aux;
-                //latch.countDown();
-                barrier.reset();
+                latch.countDown();
+                //barrier.reset();
                 System.out.println(client_order[index].get_client_name() + " managment");
                 
                 for(int i = 7; i < parts.length-2; i++) {
@@ -138,9 +138,9 @@ public class Order_Managment extends Thread{
             ex.printStackTrace();
         } catch (InterruptedException ex) {
             ex.printStackTrace();
-        } catch (BrokenBarrierException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
+        //} catch (BrokenBarrierException e1) {
+		//	// TODO Auto-generated catch block
+		//	e1.printStackTrace();
 		}
         
         

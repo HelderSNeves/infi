@@ -12,9 +12,10 @@ public class ERP {
     public static void main(String[] args) throws InterruptedException, BrokenBarrierException {
     	CyclicBarrier barrier = new CyclicBarrier(2);
     	CountDownLatch latch = new CountDownLatch(1);
+    	CountDownLatch latch1 = new CountDownLatch(1);
     	Client_Order[] client_order = new Client_Order[1000];
     	Order_Managment order_managment = new Order_Managment(latch, barrier);
-    	ERP_Algorithm erp_algorithm = new ERP_Algorithm();
+    	ERP_Algorithm erp_algorithm = new ERP_Algorithm(client_order, latch1);
     	
     	
     	erp_algorithm.start();
@@ -31,12 +32,17 @@ public class ERP {
     	//int index = 0;
     	//int i = 0;
     	//int index_seguro = 0;
-    	for(int i = 0; i < 999; i++) {
-    		barrier.await();
-    		//latch.await();
-    		client_order = order_managment.get_Client_Order();
-            System.out.println(client_order[i].get_client_name() + " ERP");
-    	}
+    	//for(int i = 0; i < 999; i++) {
+    		//barrier.await();
+    	latch.await();
+    	client_order = order_managment.get_Client_Order();
+    	System.out.println(client_order[0].get_client_name() + " ERP");
+    	erp_algorithm.set_client_order(client_order);
+    	latch1.countDown();
+    	
+    	
+        
+    	//}
     	
     	/*do { 
     		while(true) {
