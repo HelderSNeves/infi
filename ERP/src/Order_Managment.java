@@ -3,20 +3,38 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.SocketTimeoutException;
+import java.util.concurrent.BrokenBarrierException;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.CyclicBarrier;
 
 public class Order_Managment extends Thread{
 	private
 	Client_Order[] client_order;
+	CountDownLatch latch;
+	CyclicBarrier barrier;
 	public
-	Order_Managment(){
+	Order_Managment(CountDownLatch latch, CyclicBarrier barrier){
 	 client_order = new Client_Order[1000];
+	 this.latch = latch;
+	 this.barrier = barrier;
 	}
 	Client_Order[] get_Client_Order() {
 		return client_order;
 	}
 	public void run() {
 		// ################################# Creating array of Client Orders ########################################
-    	System.out.println("Cheguei");
+		System.out.println("Cheguei");
+    	int[] a = {1,1};
+    	int[] b = {1,1};
+    	int[] c = {1,1};
+    	int[] d = {1,1};
+    	String[] e = {"a","a"};
+    	
+    	//Client_Order client_order_aux1 = new Client_Order("client_name", a, e, b, c, d, a);
+    	//client_order[0] = client_order_aux1;
+    	
+    	
+    	//System.out.println(client_order[0].get_client_name() + "managment");
 		//Client_Order[] client_order = new Client_Order[1000];
     	int index = 0;
     	
@@ -37,11 +55,13 @@ public class Order_Managment extends Thread{
             DatagramSocket socket = new DatagramSocket(port);
  
             while (true) {
- 
+            	
                 //DatagramPacket request = new DatagramPacket(new byte[1], 1, address, port);
                 //socket.send(request);
  
                 byte[] buffer = new byte[1024];
+                
+            
 
             
                 DatagramPacket response = new DatagramPacket(buffer, buffer.length);
@@ -88,8 +108,12 @@ public class Order_Managment extends Thread{
                 	//System.out.println(earlyPen[i-7]);  	
                 }
                 Client_Order client_order_aux = new Client_Order(client_name, order_number, workPiece, quantity, dueDate, latePen, earlyPen);
+                barrier.await();
                 client_order[index] = client_order_aux;
-                System.out.println(client_order[index].get_client_name());
+                //latch.countDown();
+                barrier.reset();
+                System.out.println(client_order[index].get_client_name() + " managment");
+                
                 for(int i = 7; i < parts.length-2; i++) {
                 	/*System.out.println(client_order[index].get_order_number()[i-7]);
                 	System.out.println(client_order[index].get_workPiece()[i-7]);
@@ -114,7 +138,10 @@ public class Order_Managment extends Thread{
             ex.printStackTrace();
         } catch (InterruptedException ex) {
             ex.printStackTrace();
-        }
+        } catch (BrokenBarrierException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
         
         
         

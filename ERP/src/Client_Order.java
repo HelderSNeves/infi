@@ -24,6 +24,9 @@ public class Client_Order {
 	String get_client_name() {
 		return client_name;
 	}
+	void set_client_name(String client_name) {
+		this.client_name = client_name;
+	}
 	int[] get_order_number() {
 		return order_number;
 	}
