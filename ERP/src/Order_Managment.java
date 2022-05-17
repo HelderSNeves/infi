@@ -8,22 +8,23 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.CyclicBarrier;
 
 public class Order_Managment extends Thread{
-	private
-	Client_Order[] client_order;
-	CountDownLatch latch;
-	CyclicBarrier barrier;
-	public
-	Order_Managment(CountDownLatch latch, CyclicBarrier barrier){
+	
+	private Client_Order[] client_order;
+	private CountDownLatch latch;
+	private CyclicBarrier barrier;
+	
+	public Order_Managment(CountDownLatch latch, CyclicBarrier barrier){
 	 client_order = new Client_Order[1000];
 	 this.latch = latch;
 	 this.barrier = barrier;
 	}
-	Client_Order[] get_Client_Order() {
+	public Client_Order[] get_Client_Order() {
 		return client_order;
 	}
 	public void run() {
 		// ################################# Creating array of Client Orders ########################################
 		System.out.println("Cheguei");
+		int index = 0;
     	//int[] a = {1,1};
     	//int[] b = {1,1};
     	//int[] c = {1,1};
@@ -36,7 +37,7 @@ public class Order_Managment extends Thread{
     	
     	//System.out.println(client_order[0].get_client_name() + "managment");
 		//Client_Order[] client_order = new Client_Order[1000];
-    	int index = 0;
+    	
     	
     	// ################################# Reading file XML to a String via UDP #####################################
     	
@@ -74,8 +75,8 @@ public class Order_Managment extends Thread{
                 
        
                 //Client Name
-                String[] client_name_almost  = parts[6].split("\"");
-                String client_name = client_name_almost[1];
+                
+                //String client_name = client_name_almost[1];
                 
                 //System.out.println(client_name);
                 //System.out.println(parts.length);
@@ -86,6 +87,9 @@ public class Order_Managment extends Thread{
                 
                 
                 //Client Order
+                Client_Order client_order_aux;
+                String[] client_name = new String[parts.length-9];
+                String[] client_name_almost  = parts[6].split("\"");
                 int[] order_number = new int[parts.length-9];
                 String[] workPiece = new String[parts.length-9];
                 int[] quantity= new int[parts.length-9];
@@ -93,6 +97,8 @@ public class Order_Managment extends Thread{
                 int[] latePen = new int[parts.length-9];;
                 int[] earlyPen = new int[parts.length-9];;
                 for(int i = 7; i < parts.length-2; i++) {
+                	client_name[i-7] = client_name_almost[1];
+                	//System.out.println(client_name[i-7]);
                 	String[] order_almost  = parts[i].split("\"");
                 	order_number[i-7] = Integer.parseInt(order_almost[1]);
                 	workPiece[i-7] = order_almost[3];
@@ -100,6 +106,17 @@ public class Order_Managment extends Thread{
                 	dueDate[i-7] = Integer.parseInt(order_almost[7]);
                 	latePen[i-7] = Integer.parseInt(order_almost[9]);
                 	earlyPen[i-7] = Integer.parseInt(order_almost[11]);
+                	client_order_aux = new Client_Order(client_name[i-7], order_number[i-7], workPiece[i-7], quantity[i-7], dueDate[i-7], latePen[i-7], earlyPen[i-7]);
+                	client_order[index] = client_order_aux;
+                	latch.countDown();
+//                	System.out.println(client_order[index].get_client_name() + " managment");
+//                	System.out.println(client_order[index].get_order_number() + " managment");
+//                	System.out.println(client_order[index].get_workPiece() + " managment");
+//                	System.out.println(client_order[index].get_quantity() + " managment");
+//                	System.out.println(client_order[index].get_dueDate() + " managment");
+//                	System.out.println(client_order[index].get_latePen() + " managment");
+//                	System.out.println(client_order[index].get_earlyPen() + " managment");
+                	index++;
                 	//System.out.println(order_number[i-7]);
                 	//System.out.println(workPiece[i-7]);
                 	//System.out.println(quantity[i-7]);
@@ -107,22 +124,22 @@ public class Order_Managment extends Thread{
                 	//System.out.println(latePen[i-7]);
                 	//System.out.println(earlyPen[i-7]);  	
                 }
-                Client_Order client_order_aux = new Client_Order(client_name, order_number, workPiece, quantity, dueDate, latePen, earlyPen);
+                //Client_Order client_order_aux = new Client_Order(client_name, order_number, workPiece, quantity, dueDate, latePen, earlyPen);
                 //barrier.await();
-                client_order[index] = client_order_aux;
-                latch.countDown();
+                //client_order[index] = client_order_aux;
+                //latch.countDown();
                 //barrier.reset();
-                System.out.println(client_order[index].get_client_name() + " managment");
+                //System.out.println(client_order[index].get_client_name() + " managment");
                 
-                for(int i = 7; i < parts.length-2; i++) {
+                //for(int i = 7; i < parts.length-2; i++) {
                 	/*System.out.println(client_order[index].get_order_number()[i-7]);
                 	System.out.println(client_order[index].get_workPiece()[i-7]);
                 	System.out.println(client_order[index].get_quantity()[i-7]);
                 	System.out.println(client_order[index].get_dueDate()[i-7]);
                 	System.out.println(client_order[index].get_latePen()[i-7]);
                 	System.out.println(client_order[index].get_earlyPen()[i-7]);*/
-                }
-                index++;
+                //}
+                //index++;
                 
      
  

@@ -1,15 +1,15 @@
 import java.util.concurrent.CountDownLatch;
 
 public class ERP_Algorithm extends Thread{
-	private
-	Client_Order[] client_order;
-	CountDownLatch latch1;
-	public 
-	ERP_Algorithm(Client_Order[] client_order, CountDownLatch latch1) {
+	
+	private Client_Order[] client_order;
+	private CountDownLatch latch1;
+	
+	public ERP_Algorithm(Client_Order[] client_order, CountDownLatch latch1) {
 		this.client_order = client_order;
 		this.latch1 = latch1;
 	}
-	void set_client_order(Client_Order[] client_order) {
+	public void set_client_order(Client_Order[] client_order) {
 		this.client_order = client_order;
 	}
 	public void run()  {
@@ -31,7 +31,15 @@ public class ERP_Algorithm extends Thread{
 		}
 		// aqui ja fez o set ou seja ja temos aqui o primeiro elemento do vetor
 		
+		//System.out.println(client_order[0].get_client_name() + " algorithm");
 		System.out.println(client_order[0].get_client_name() + " algorithm");
+    	System.out.println(client_order[0].get_order_number() + " algorithm");
+    	System.out.println(client_order[0].get_workPiece() + " algorithm");
+   		System.out.println(client_order[0].get_quantity() + " algorithm");
+    	System.out.println(client_order[0].get_dueDate() + " algorithm");
+    	System.out.println(client_order[0].get_latePen() + " algorithm");
+    	System.out.println(client_order[0].get_earlyPen() + " algorithm");
+		
 					
 					//System.out.println(client_order[i].get_client_name() + "asd");
 					//long end = System.currentTimeMillis();

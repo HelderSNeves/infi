@@ -36,7 +36,13 @@ public class ERP {
     		//barrier.await();
     	latch.await();
     	client_order = order_managment.get_Client_Order();
-    	System.out.println(client_order[0].get_client_name() + " ERP");
+    	System.out.println(client_order[0].get_client_name() + " erp");
+    	System.out.println(client_order[0].get_order_number() + " erp");
+    	System.out.println(client_order[0].get_workPiece() + " erp");
+   		System.out.println(client_order[0].get_quantity() + " erp");
+    	System.out.println(client_order[0].get_dueDate() + " erp");
+    	System.out.println(client_order[0].get_latePen() + " erp");
+    	System.out.println(client_order[0].get_earlyPen() + " erp");
     	erp_algorithm.set_client_order(client_order);
     	latch1.countDown();
     	
