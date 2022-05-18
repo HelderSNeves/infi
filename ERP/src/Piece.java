@@ -6,18 +6,18 @@ public class Piece {
 	private int[] operations;
 	private char supplier;
 	private int raw;
-	private Client_Order client_order;
+	//private Client_Order client_order;
 	private int dispatchDate;
 	private int arrivalDate;
 		
 		
-	public Piece(int type, String position, int[] operations, char supplier, int raw, Client_Order client_order, int dispatchDate, int arrivalDate) {
+	public Piece(int type, String position, int[] operations, char supplier, int raw,/* Client_Order client_order,*/ int dispatchDate, int arrivalDate) {
 		this.type = type;
 		this.position = position;
 		this.operations = operations;
 		this.supplier = supplier;
 		this.raw = raw;
-		this.client_order = client_order;
+		//this.client_order = client_order;
 		this.dispatchDate = dispatchDate;
 		this.arrivalDate = arrivalDate;
 	}
@@ -51,12 +51,12 @@ public class Piece {
 	public void set_raw(int raw) {
 		this.raw = raw;
 	}
-	public Client_Order get_client_order() {
-		return this.client_order;
-	}
-	public void set_client_order(Client_Order client_order) {
-		this.client_order = client_order;
-	}
+//	public Client_Order get_client_order() {
+//		return this.client_order;
+//	}
+//	public void set_client_order(Client_Order client_order) {
+//		this.client_order = client_order;
+//	}
 	public int get_dispatchDate() {
 		return this.dispatchDate;
 	}
@@ -69,7 +69,7 @@ public class Piece {
 	public void set_arrivalDate(int arrivalDate) {
 		this.arrivalDate = arrivalDate;
 	}
-	public double total_cost(int dispatchDate, int arrivalDate, char supplier, int raw, Client_Order client_order) {
+	public double total_cost(int dispatchDate, int arrivalDate, char supplier, int raw/*, Client_Order client_order*/) {
 		// Ainda por fazer
 		
 		return 0.0;

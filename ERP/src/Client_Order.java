@@ -9,10 +9,11 @@ public class Client_Order {
 	private int dueDate;
 	private int latePen;
 	private int earlyPen;
+	private String status;
 	
 	
 	
-	public Client_Order(String client_name, int order_number, String workPiece, int quantity, int dueDate, int latePen, int earlyPen){
+	public Client_Order(String client_name, int order_number, String workPiece, int quantity, int dueDate, int latePen, int earlyPen, String status){
 		this.client_name = client_name;
 		this.order_number = order_number;
 		this.workPiece = workPiece;
@@ -20,6 +21,7 @@ public class Client_Order {
 		this.dueDate = dueDate;
 		this.latePen = latePen;
 		this.earlyPen = earlyPen;
+		this.status = status;
 	}
 	public String get_client_name() {
 		return client_name;
@@ -44,6 +46,12 @@ public class Client_Order {
 	}
 	public int get_earlyPen() {
 		return earlyPen;
+	}
+	public String get_status() {
+		return status;
+	}
+	public void set_status(String status) {
+		this.status = status;
 	}
 	
 	
