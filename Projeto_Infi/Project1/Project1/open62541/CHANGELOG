@@ -1,0 +1,12 @@
+This changelog reports changes visible through the public API. Internal refactorings and bug
+fixes are not reported here.
+
+2022-01-12 Mark Giraud <mark.giraud at iosb.fraunhofer.de>
+
+ * Empty arrays always match the array dimensions
+
+   We consider empty arrays (also null-arrays) to have implied array
+   dimensions [0,0,...]. So they always match the array dimensions
+   defined in the variable. With this, the initialization of
+   variables without a defined value has been simplified.
+   We now create a null array if one is required.

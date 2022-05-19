@@ -1,0 +1,2 @@
+﻿  main.cpp
+C:\Users\helde\Downloads\freeopcua-master\freeopcua-master\include\opc\ua\protocol\variant.h(18,10): fatal error C1083: Não é possível abrir arquivo incluir: 'boost/any.hpp': No such file or directory
