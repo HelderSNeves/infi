@@ -10,6 +10,7 @@ import java.util.concurrent.CyclicBarrier;
 public class Order_Managment extends Thread{
 	
 	private Client_Order[] client_order;
+	private static int order_by_order;
 	
 	public Order_Managment() {
 		// TODO Auto-generated constructor stub
@@ -17,6 +18,9 @@ public class Order_Managment extends Thread{
 	}
 	public Client_Order[] get_Client_Order() {
 		return client_order;
+	}
+	public void set_Client_Order(Client_Order[] client_order) {
+		this.client_order = client_order;
 	}
 	public void run() {
 		// ################################# Creating array of Client Orders ########################################
@@ -106,6 +110,8 @@ public class Order_Managment extends Thread{
                 	earlyPen[i-7] = Integer.parseInt(order_almost[11]);
                 	status[i-7] = "None-";
                 	status[i-7] = status[i-7].concat(Integer.toString(quantity[i-7]));
+                	status[i-7] = status[i-7].concat("-");
+                	status[i-7] = status[i-7].concat(Integer.toString(order_by_order));
                 	client_order_aux = new Client_Order(client_name[i-7], order_number[i-7], workPiece[i-7], quantity[i-7], dueDate[i-7], latePen[i-7], earlyPen[i-7], status[i-7]);
                 	client_order[index] = client_order_aux;
 //                	System.out.println(client_order[index].get_client_name() + " managment");
@@ -116,6 +122,7 @@ public class Order_Managment extends Thread{
 //                	System.out.println(client_order[index].get_latePen() + " managment");
 //                	System.out.println(client_order[index].get_earlyPen() + " managment");
                 	index++;
+                	order_by_order++;
                 	//System.out.println(order_number[i-7]);
                 	//System.out.println(workPiece[i-7]);
                 	//System.out.println(quantity[i-7]);

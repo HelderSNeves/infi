@@ -14,48 +14,174 @@ public class ERP {
 		}
 		return count;
 	}
-	public static void algoritmo(Client_Order[] client_order, WarehouseIn warehouseIn)  {
+	public static Client_Order[] algoritmo(Client_Order[] client_order, WarehouseIn warehouseIn)  {
 		System.out.println("Boas dentro do algoritmo");
 		// aqui ja fez o set ou seja ja temos aqui o primeiro elemento do vetor
 		try {
 			int len = count_non_null(client_order);
-			for (int i = 0; i < len; i++){
-				Client_Order min = client_order[i];
-				int idx = i;
-				for (int j = i+1; j < len; j++){
-					if (client_order[j].get_dueDate() < min.get_dueDate()){
-						min = client_order[j];
-						idx = j;
-					}
-				}
-				if (idx != i){
-					min = client_order[i];
-					client_order[i] = client_order[idx];
-					client_order[idx] = min;
-				}
-			}
-			////// Colocar a do supplier na primeira posicao
+		////// Colocar a do supplier na primeira posicao
 			
 			Client_Order client_order_aux;
 			int index_aux = 0;
+			int supplier_flag = 0;
 			for(int i = 0; i < len; i++) {
 				String[] parts = client_order[i].get_status().split("-");
-				if (parts[0] == "Supplier") {
+				System.out.println(parts[0] + "-" + parts[1] + " " + i);
+				if (parts[0].equals("Supplier")) {
+					System.out.println("Condicao de Supplier " + i);
+					supplier_flag = 1;
 					client_order_aux = client_order[i];
 					index_aux = i;
 					for(int j = 0; j < index_aux; j++) {
 						client_order[index_aux-j] = client_order[index_aux-j-1];	
 					}
 					client_order[0] = client_order_aux;
+					break;
 				}
 			}
-
-			for(int i = 0; i < 3; i++) {
+		////// Colocar a ultima finished na ultima posicao
+			int len_finished  = 0;
+			for(int i = 0; i < len; i++) {
+				String[] parts = client_order[i].get_status().split("-");
+				if (parts[0].equals("Finished")) {
+					len_finished++;
+				}
+			}
+			if (len_finished != 0) {
+				Client_Order client_order_aux1;
+				int index_aux1 = 0;
+				int len1 = len;
+				for(int i = 0; i < len1; i++) {
+					String[] parts = client_order[i].get_status().split("-");
+					if (parts[0].equals("Finished")) {
+						System.out.println("Condicao de Finished " + i);
+						client_order_aux1 = client_order[i];
+						index_aux1 = i;
+						for(int j = 0; j < (len1-index_aux1-1); j++) {
+							client_order[index_aux1+j] = client_order[index_aux1+j+1];	
+						}
+						client_order[len1-1] = client_order_aux1;
+						len1--;
+					}
+				} 
+				// Ordernar os finished por due_date depois de os colocar no fim
+				for(int i = (len-len_finished); i < len; i++) {
+					Client_Order min = client_order[i];
+					int idx = i;
+					for (int j = i+1; j < len; j++){
+						if (client_order[j].get_dueDate() < min.get_dueDate()){
+							min = client_order[j];
+							idx = j;
+						}
+					}
+					if (idx != i){
+						min = client_order[i];
+						client_order[i] = client_order[idx];
+						client_order[idx] = min;
+					}
+				}
+//				// Ordenar os finished que tem a mesma due_date por ordem de chegada
+//				for(int i = (len-len_finished); i < len; i++) {
+//					Client_Order min = client_order[i];
+//					int idx = i;
+//					for (int j = i+1; j < len; j++){
+//						if(client_order[j].get_dueDate() == min.get_dueDate()) {
+//							if (Integer.parseInt(client_order[j].get_status().split("-")[2]) < Integer.parseInt(min.get_status().split("-")[2])){
+//								min = client_order[j];
+//								idx = j;
+//							}
+//						
+//							if (idx != i){
+//								min = client_order[i];
+//								client_order[i] = client_order[idx];
+//								client_order[idx] = min;
+//							}
+//						}
+//					}	
+//				}
+				
+			}else {
+				System.out.println("Nao ha finisheds");
+			}
+			if(supplier_flag == 1) {
+				for (int i = 1; i < (len-len_finished); i++){
+					Client_Order min = client_order[i];
+					int idx = i;
+					for (int j = i+1; j < (len-len_finished); j++){
+						if (client_order[j].get_dueDate() < min.get_dueDate()){
+							min = client_order[j];
+							idx = j;
+						}
+					}
+					if (idx != i){
+						min = client_order[i];
+						client_order[i] = client_order[idx];
+						client_order[idx] = min;
+					}
+				}
+//				// Ordenar por ordem de chegada
+//				for(int i = 1; i < (len-len_finished); i++) {
+//					Client_Order min = client_order[i];
+//					int idx = i;
+//					for (int j = i+1; j < (len-len_finished); j++){
+//						if(client_order[j].get_dueDate() == min.get_dueDate()) {
+//							if (Integer.parseInt(client_order[j].get_status().split("-")[2]) < Integer.parseInt(min.get_status().split("-")[2])){
+//								min = client_order[j];
+//								idx = j;
+//							}
+//						
+//							if (idx != i){
+//								min = client_order[i];
+//								client_order[i] = client_order[idx];
+//								client_order[idx] = min;
+//							}
+//						}
+//					}	
+//				}
+				
+			} else {
+				for (int i = 0; i < (len-len_finished); i++){
+					Client_Order min = client_order[i];
+					int idx = i;
+					for (int j = i+1; j < (len-len_finished); j++){
+						if (client_order[j].get_dueDate() < min.get_dueDate()){
+							min = client_order[j];
+							idx = j;
+						}
+					}
+					if (idx != i){
+						min = client_order[i];
+						client_order[i] = client_order[idx];
+						client_order[idx] = min;
+					}
+				}
+//				for(int i = 0; i < (len-len_finished); i++) {
+//					Client_Order min = client_order[i];
+//					int idx = i;
+//					for (int j = i+1; j < (len-len_finished); j++){
+//						if(client_order[j].get_dueDate() == min.get_dueDate()) {
+//							if (Integer.parseInt(client_order[j].get_status().split("-")[2]) < Integer.parseInt(min.get_status().split("-")[2])){
+//								min = client_order[j];
+//								idx = j;
+//							}
+//							if (idx != i){
+//								min = client_order[i];
+//								client_order[i] = client_order[idx];
+//								client_order[idx] = min;
+//							}
+//						}
+//					}	
+//				}
+			}
+			
+			
+			for(int i = 0; i < len; i++) {
+				System.out.println(i);
 				System.out.println(client_order[i].get_client_name() + " algorithm");
 	    		System.out.println(client_order[i].get_order_number() + " algorithm");
 	        	System.out.println(client_order[i].get_workPiece() + " algorithm");
 	       		System.out.println(client_order[i].get_quantity() + " algorithm");
-	        	System.out.println(client_order[i].get_dueDate() + " due date - algorithm");
+	        	System.out.println(client_order[i].get_dueDate() + " DUE DATE - algorithm");
 	        	System.out.println(client_order[i].get_latePen() + " algorithm");
 	        	System.out.println(client_order[i].get_earlyPen() + " algorithm");
 	        	System.out.println(client_order[i].get_status() + " algorithm");
@@ -65,38 +191,56 @@ public class ERP {
 			String[] parts = client_order[0].get_status().split("-");
 			System.out.println(parts[0] + "asdasdsadsadsadasdasdasdsadasdasdasdasdasdas" + parts[1]);
 			if(parts[0].equals("Supplier")) {
-				// Pecas P3, P4 ou P5 - enica possibilidade e mandar vir P2
+				// Pecas P3, P4 ou P5 - unica possibilidade e mandar vir P2
 				// Pecas P7 - vem de P4 e P4 so vem de P2
 				// Pecas P9 - vem a partir de P7 que vem de P4 que so vem de P2
-				if(client_order[0].get_workPiece() == "P3" || client_order[0].get_workPiece() == "P4" || client_order[0].get_workPiece() == "P5" || client_order[0].get_workPiece() == "P7" || client_order[0].get_workPiece() == "P9") {
+				if(client_order[0].get_workPiece().equals("P3") || client_order[0].get_workPiece().equals("P4") || client_order[0].get_workPiece().equals("P5") || client_order[0].get_workPiece().equals("P7") || client_order[0].get_workPiece().equals("P9")) {
 	    			
 	    			if(Integer.parseInt(parts[1]) > 4) {
+	    				warehouseIn.set_client_order(client_order[0]);
+	    				warehouseIn.set_pieces_to_be_done(Integer.parseInt(parts[1]));
 	    				warehouseIn.set_flag_supply("2C");
 	    				String aux = "Supplier-";
 	    				int aux1 = Integer.parseInt(parts[1]) - 4;
 	    				aux = aux.concat(Integer.toString(aux1));
+	    				aux = aux.concat("-");
+	    				aux = aux.concat(parts[2]);
 	    				client_order[0].set_status(aux);
 	    			}
 	    			if(Integer.parseInt(parts[1]) <= 4) {
+	    				warehouseIn.set_client_order(client_order[0]);
+	    				warehouseIn.set_pieces_to_be_done(Integer.parseInt(parts[1]));
 	    				warehouseIn.set_flag_supply("2C");
-	    				client_order[0].set_status("Finished-0");
+	    				System.out.println("Viu que a peca tem 4 ou menos");
+	    				String status_aux = "Finished-0-";
+	    				status_aux = status_aux.concat(parts[2]);
+	    				client_order[0].set_status(status_aux);
+	    				
 	    			}
 	    		}
 				
 				// Pecas P6 - vamos fazer a partir de P1
 				// Pecas P8 - vem de P6 e P6 vamos fazer a partir de P1
-				if(client_order[0].get_workPiece() == "P6" || client_order[0].get_workPiece() == "P8") {
+				if(client_order[0].get_workPiece().equals("P6") || client_order[0].get_workPiece().equals("P8")) {
 	    			
 	    			if(Integer.parseInt(parts[1]) > 4) {
+	    				warehouseIn.set_client_order(client_order[0]);
+	    				warehouseIn.set_pieces_to_be_done(Integer.parseInt(parts[1]));
 	    				warehouseIn.set_flag_supply("1C");
 	    				String aux = "Supplier-";
 	    				int aux1 = Integer.parseInt(parts[1]) - 4;
 	    				aux = aux.concat(Integer.toString(aux1));
+	    				aux = aux.concat("-");
+	    				aux = aux.concat(parts[2]);
 	    				client_order[0].set_status(aux);
 	    			}
 	    			if(Integer.parseInt(parts[1]) <= 4) {
+	    				warehouseIn.set_client_order(client_order[0]);
+	    				warehouseIn.set_pieces_to_be_done(Integer.parseInt(parts[1]));
 	    				warehouseIn.set_flag_supply("1C");
-	    				client_order[0].set_status("Finished-0");
+	    				String status_aux = "Finished-0-";
+	    				status_aux = status_aux.concat(parts[2]);
+	    				client_order[0].set_status(status_aux);
 	    			}
 	    		}	
 				
@@ -108,15 +252,25 @@ public class ERP {
 				if(client_order[0].get_workPiece().equals("P3") || client_order[0].get_workPiece().equals("P4") || client_order[0].get_workPiece().equals("P5") || client_order[0].get_workPiece().equals("P7") || client_order[0].get_workPiece().equals("P9")) {
 	    			
 	    			if(Integer.parseInt(parts[1]) > 4) {
+	    				warehouseIn.set_client_order(client_order[0]);
+	    				warehouseIn.set_pieces_to_be_done(Integer.parseInt(parts[1]));
 	    				warehouseIn.set_flag_supply("2C");
 	    				String aux = "Supplier-";
 	    				int aux1 = Integer.parseInt(parts[1]) - 4;
 	    				aux = aux.concat(Integer.toString(aux1));
+	    				aux = aux.concat("-");
+	    				aux = aux.concat(parts[2]);
+	    				System.out.println(aux);
 	    				client_order[0].set_status(aux);
+	    				
 	    			}
 	    			if(Integer.parseInt(parts[1]) <= 4) {
+	    				warehouseIn.set_client_order(client_order[0]);
+	    				warehouseIn.set_pieces_to_be_done(Integer.parseInt(parts[1]));
 	    				warehouseIn.set_flag_supply("2C");
-	    				client_order[0].set_status("Finished-0");
+	    				String status_aux = "Finished-0-";
+	    				status_aux = status_aux.concat(parts[2]);
+	    				client_order[0].set_status(status_aux);
 	    			}
 	    		}
 				
@@ -125,25 +279,34 @@ public class ERP {
 				if(client_order[0].get_workPiece().equals("P6") || client_order[0].get_workPiece().equals("P8")) {
 	    			System.out.println("Boas do P6");
 	    			if(Integer.parseInt(parts[1]) > 4) {
+	    				warehouseIn.set_client_order(client_order[0]);
+	    				warehouseIn.set_pieces_to_be_done(Integer.parseInt(parts[1]));
 	    				warehouseIn.set_flag_supply("1C");
 	    				String aux = "Supplier-";
 	    				int aux1 = Integer.parseInt(parts[1]) - 4;
 	    				aux = aux.concat(Integer.toString(aux1));
+	    				aux = aux.concat("-");
+	    				aux = aux.concat(parts[2]);
 	    				client_order[0].set_status(aux);
 	    			}
 	    			if(Integer.parseInt(parts[1]) <= 4) {
+	    				warehouseIn.set_client_order(client_order[0]);
+	    				warehouseIn.set_pieces_to_be_done(Integer.parseInt(parts[1]));
 	    				warehouseIn.set_flag_supply("1C");
-	    				client_order[0].set_status("Finished-0");
+	    				String status_aux = "Finished-0-";
+	    				status_aux = status_aux.concat(parts[2]);
+	    				client_order[0].set_status(status_aux);
+	    				
 	    			}
 	    		}
 					
+			} else {
+				// Ta finished ou seja, todos estao finished, nao faz nenhuma encomenda
 			}
-        	
-        	
     	}catch(NullPointerException e) {
     		// Do nothing here
     	}
-						
+		return client_order;			
 	}
  
     public static void main(String[] args) throws InterruptedException {
@@ -167,23 +330,55 @@ public class ERP {
     		if (seconds == (20*index)) {
     			//System.out.println("ERP");
     			client_order = order_managment.get_Client_Order();
+    			System.out.println(client_order[0].get_status());
     			System.out.println("Boas antes do algoritmo");
-    			algoritmo(client_order, warehouseIn);
+    			client_order = algoritmo(client_order, warehouseIn);
+    			System.out.println(client_order[0].get_status());
+    			if(client_order.length == order_managment.get_Client_Order().length)
+    				order_managment.set_Client_Order(client_order);
+    			else {
+    				for(int i = 0; i < order_managment.get_Client_Order().length - client_order.length; i++) {
+    					client_order[client_order.length+i] = order_managment.get_Client_Order()[client_order.length+i];
+    				}
+    				order_managment.set_Client_Order(client_order);
+    			}
+    			//order_managment.set_Client_Order(client_order);
     			System.out.println("Boas depois do algoritmo");
     			//erp_algorithm.set_client_order(client_order);
     			//erp_algorithm.set_warehouseIn(warehouseIn);
     			//erp_algorithm.algoritmo();
     			index++;
+    			
     			//warehouseIn = erp_algorithm.get_warehouseIn();
     			warehouseIn_pieces = warehouseIn.get_warehouseIn_pieces();
+    			int count_warehouseIn = 0;
+    			for (int i = 0; i < warehouseIn_pieces.length; i++){
+    				if(warehouseIn_pieces[i] != null)
+    					count_warehouseIn++;
+    			}
+
     			try {
-    				System.out.println(warehouseIn_pieces[0].get_type());
-    				System.out.println(warehouseIn_pieces[0].get_position());
-    				for(int i = 0; i < 4; i++) {System.out.println(warehouseIn_pieces[0].get_operations()[i]);}
-    				System.out.println(warehouseIn_pieces[0].get_supplier());
-    				System.out.println(warehouseIn_pieces[0].get_raw());
-    				System.out.println(warehouseIn_pieces[0].get_dispatchDate());
-    				System.out.println(warehouseIn_pieces[0].get_arrivalDate());	
+    				System.out.println("Pieces in the Warehouse IN");
+    				for(int i = 0; i < count_warehouseIn; i++) {
+    					System.out.println("///////////////Piece " + (i+1) + ": ////////////////");
+    					System.out.println("Type: " + warehouseIn_pieces[i].get_type());
+    					System.out.println("Position: " + warehouseIn_pieces[i].get_position());
+    					System.out.println("Operations: " + warehouseIn_pieces[i].get_operations()[0] + "-" + warehouseIn_pieces[i].get_operations()[1] + "-" + warehouseIn_pieces[i].get_operations()[2] + "-" + warehouseIn_pieces[i].get_operations()[3]);
+    					System.out.println("Supplier: " + warehouseIn_pieces[i].get_supplier());
+    					System.out.println("Raw Material: P" + warehouseIn_pieces[i].get_raw());
+    					System.out.println("Dispatch Date: " + warehouseIn_pieces[i].get_dispatchDate());
+        				System.out.println("Arrival Date: " + warehouseIn_pieces[i].get_arrivalDate());
+        				System.out.println("-----------Client_Order-------------: \n"
+								+  "Client Name: " + warehouseIn_pieces[i].get_client_order().get_client_name() + "\n"
+								+  "Order Number: " + warehouseIn_pieces[i].get_client_order().get_order_number() + "\n"
+								+  "WorkPiece: " + warehouseIn_pieces[i].get_client_order().get_workPiece() + "\n"
+								+  "Quantity: " + warehouseIn_pieces[i].get_client_order().get_quantity() + "\n"
+								+  "Due Date: " + warehouseIn_pieces[i].get_client_order().get_dueDate() + "\n"
+								+  "Late Penalty: " + warehouseIn_pieces[i].get_client_order().get_latePen() + "\n"
+								+  "Early Penalty: " + warehouseIn_pieces[i].get_client_order().get_earlyPen() + "\n"
+								+  "Status: " + warehouseIn_pieces[i].get_client_order().get_status()); 
+    				}
+    					
     			}catch(NullPointerException e) {
     	    		// Do nothing here
     	    	}
