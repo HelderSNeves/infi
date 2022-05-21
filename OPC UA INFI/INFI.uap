@@ -1,0 +1,1564 @@
+[Servers]
+0\Name=OPCUAServer@Laptop
+0\Connected=true
+0\ProjectServerId=0
+0\ServerUrl=opc.tcp://Laptop:4840
+0\Server.ApplicationUri=urn:Laptop:3S%20-%20Smart%20Software%20Solutions%20GmbH:CODESYS%20Control%20Win%20V3%20x64:OPCUA:Server
+0\Server.ProductUri=urn:3S%20-%20Smart%20Software%20Solutions%20GmbH:CODESYS%20Control%20Win%20V3%20x64:OPCUA:Server
+0\Server.ApplicationNameLocale=en-Us
+0\Server.ApplicationNameText=OPCUAServer@Laptop
+0\Server.ApplicationType=0
+0\Server.GatewayServerUri=
+0\Server.DiscoveryProfileUri=
+0\Server.NoOfDiscoveryUrls=1
+0\Server.DiscoveryUrl0=opc.tcp://Laptop:4840
+0\ServerCertificate=@ByteArray()
+0\MessageSecurityMode=1
+0\SecurityPolicy=http://opcfoundation.org/UA/SecurityPolicy#None
+0\NoOfUserIdentityTokens=1
+0\UserIdentityToken0.PolicyId=Anonymous
+0\UserIdentityToken0.TokenType=0
+0\UserIdentityToken0.IssuedTokenType=
+0\UserIdentityToken0.IssuerEndpointUrl=
+0\UserIdentityToken0.SecurityPolicyUri=
+0\TransportProfileUri=http://opcfoundation.org/UA-Profile/Transport/uatcp-uasc-uabinary
+0\SecurityLevel=0
+0\DisplayName=OPCUAServer@Laptop
+0\ReverseConnect=false
+0\ClientEndpointUrl=
+0\UserTokenType=0
+0\SessionName=urn:Laptop:UnifiedAutomation:UaExpert
+0\DiscoveryHost=
+0\UserName=
+0\StorePassword=false
+0\CertificateFile=
+0\PrivateKeyFile=
+0\Namespaces\0=http://opcfoundation.org/UA/
+0\Namespaces\1=urn:Laptop:3S%20-%20Smart%20Software%20Solutions%20GmbH:CODESYS%20Control%20Win%20V3%20x64:OPCUA:Server
+0\Namespaces\2=http://opcfoundation.org/UA/DI/
+0\Namespaces\3=http://PLCopen.org/OpcUa/IEC61131-3/
+0\Namespaces\4=CODESYSSPV3/3S/IecVarAccess
+
+[Documents]
+Data%20Access%20View\DocumentType=Data Access View
+Data%20Access%20View\DocumentSettings\headerState="@ByteArray(\0\0\0\xff\0\0\0\0\0\0\0\x1\0\0\0\x1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x3L\0\0\0\t\x1\0\x1\0\0\0\0\0\0\0\0\0\0\0\0\0\x64\xff\xff\xff\xff\0\0\0\x84\0\0\0\0\0\0\0\x2\0\0\0,\0\0\0\x1\0\0\0\0\0\0\x3 \0\0\0\b\0\0\0\0)"
+Data%20Access%20View\DocumentSettings\SubscriptionSettings\publishingInterval=500
+Data%20Access%20View\DocumentSettings\SubscriptionSettings\lifetimeCount=2400
+Data%20Access%20View\DocumentSettings\SubscriptionSettings\maxKeepAliveCount=10
+Data%20Access%20View\DocumentSettings\SubscriptionSettings\maxNotificationsPerPublish=0
+Data%20Access%20View\DocumentSettings\SubscriptionSettings\priority=0
+Data%20Access%20View\DocumentSettings\SubscriptionSettings\publishingEnabled=true
+Data%20Access%20View\DocumentSettings\Items\000\215\DisplayName=E2_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\215\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.E2_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\215\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\215\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\215\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\215\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\215\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\216\DisplayName=E2_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\216\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.E2_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\216\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\216\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\216\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\216\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\216\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\217\DisplayName=E2_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\217\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.E2_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\217\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\217\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\217\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\217\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\217\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\218\DisplayName=E3_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\218\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.E3_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\218\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\218\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\218\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\218\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\218\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\219\DisplayName=E3_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\219\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.E3_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\219\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\219\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\219\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\219\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\219\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\220\DisplayName=E3_RotateMinus
+Data%20Access%20View\DocumentSettings\Items\000\220\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.E3_RotateMinus"
+Data%20Access%20View\DocumentSettings\Items\000\220\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\220\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\220\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\220\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\220\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\221\DisplayName=E3_RotatePlus
+Data%20Access%20View\DocumentSettings\Items\000\221\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.E3_RotatePlus"
+Data%20Access%20View\DocumentSettings\Items\000\221\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\221\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\221\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\221\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\221\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\222\DisplayName=E3_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\222\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.E3_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\222\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\222\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\222\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\222\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\222\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\223\DisplayName=E3_SensorRMinus
+Data%20Access%20View\DocumentSettings\Items\000\223\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.E3_SensorRMinus"
+Data%20Access%20View\DocumentSettings\Items\000\223\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\223\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\223\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\223\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\223\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\224\DisplayName=E3_SensorRPlus
+Data%20Access%20View\DocumentSettings\Items\000\224\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.E3_SensorRPlus"
+Data%20Access%20View\DocumentSettings\Items\000\224\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\224\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\224\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\224\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\224\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\225\DisplayName=Load0_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\225\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Load0_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\225\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\225\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\225\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\225\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\225\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\226\DisplayName=Load0_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\226\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Load0_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\226\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\226\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\226\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\226\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\226\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\227\DisplayName=Load0_RotateMinus
+Data%20Access%20View\DocumentSettings\Items\000\227\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Load0_RotateMinus"
+Data%20Access%20View\DocumentSettings\Items\000\227\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\227\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\227\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\227\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\227\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\228\DisplayName=Load0_RotatePlus
+Data%20Access%20View\DocumentSettings\Items\000\228\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Load0_RotatePlus"
+Data%20Access%20View\DocumentSettings\Items\000\228\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\228\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\228\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\228\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\228\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\229\DisplayName=Load0_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\229\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Load0_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\229\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\229\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\229\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\229\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\229\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\230\DisplayName=Load0_SensorRMinus
+Data%20Access%20View\DocumentSettings\Items\000\230\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Load0_SensorRMinus"
+Data%20Access%20View\DocumentSettings\Items\000\230\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\230\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\230\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\230\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\230\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\231\DisplayName=Load0_SensorRPlus
+Data%20Access%20View\DocumentSettings\Items\000\231\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Load0_SensorRPlus"
+Data%20Access%20View\DocumentSettings\Items\000\231\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\231\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\231\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\231\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\231\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\232\DisplayName=Load1_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\232\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Load1_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\232\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\232\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\232\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\232\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\232\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\233\DisplayName=Load1_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\233\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Load1_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\233\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\233\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\233\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\233\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\233\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\234\DisplayName=Load1_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\234\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Load1_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\234\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\234\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\234\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\234\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\234\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\235\DisplayName=Load2_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\235\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Load2_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\235\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\235\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\235\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\235\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\235\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\236\DisplayName=Load2_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\236\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Load2_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\236\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\236\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\236\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\236\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\236\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\237\DisplayName=Load2_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\237\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.Load2_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\237\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\237\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\237\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\237\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\237\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\238\DisplayName=M11_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\238\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M11_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\238\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\238\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\238\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\238\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\238\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\239\DisplayName=M11_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\239\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M11_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\239\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\239\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\239\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\239\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\239\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\240\DisplayName=M11_RotateMinus
+Data%20Access%20View\DocumentSettings\Items\000\240\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M11_RotateMinus"
+Data%20Access%20View\DocumentSettings\Items\000\240\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\240\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\240\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\240\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\240\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\241\DisplayName=M11_RotatePlus
+Data%20Access%20View\DocumentSettings\Items\000\241\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M11_RotatePlus"
+Data%20Access%20View\DocumentSettings\Items\000\241\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\241\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\241\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\241\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\241\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\242\DisplayName=M11_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\242\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M11_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\242\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\242\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\242\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\242\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\242\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\243\DisplayName=M11_SensorTool
+Data%20Access%20View\DocumentSettings\Items\000\243\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M11_SensorTool"
+Data%20Access%20View\DocumentSettings\Items\000\243\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\243\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\243\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\243\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\243\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\244\DisplayName=M11_SensorXminus
+Data%20Access%20View\DocumentSettings\Items\000\244\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M11_SensorXminus"
+Data%20Access%20View\DocumentSettings\Items\000\244\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\244\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\244\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\244\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\244\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\245\DisplayName=M11_SensorXplus
+Data%20Access%20View\DocumentSettings\Items\000\245\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M11_SensorXplus"
+Data%20Access%20View\DocumentSettings\Items\000\245\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\245\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\245\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\245\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\245\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\246\DisplayName=M11_SensorZminus
+Data%20Access%20View\DocumentSettings\Items\000\246\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M11_SensorZminus"
+Data%20Access%20View\DocumentSettings\Items\000\246\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\246\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\246\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\246\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\246\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\247\DisplayName=M11_SensorZplus
+Data%20Access%20View\DocumentSettings\Items\000\247\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M11_SensorZplus"
+Data%20Access%20View\DocumentSettings\Items\000\247\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\247\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\247\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\247\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\247\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\248\DisplayName=M11_Tool
+Data%20Access%20View\DocumentSettings\Items\000\248\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M11_Tool"
+Data%20Access%20View\DocumentSettings\Items\000\248\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\248\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\248\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\248\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\248\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\249\DisplayName=M11_XMinus
+Data%20Access%20View\DocumentSettings\Items\000\249\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M11_XMinus"
+Data%20Access%20View\DocumentSettings\Items\000\249\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\249\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\249\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\249\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\249\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\250\DisplayName=M11_XPlus
+Data%20Access%20View\DocumentSettings\Items\000\250\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M11_XPlus"
+Data%20Access%20View\DocumentSettings\Items\000\250\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\250\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\250\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\250\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\250\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\251\DisplayName=M11_ZMinus
+Data%20Access%20View\DocumentSettings\Items\000\251\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M11_ZMinus"
+Data%20Access%20View\DocumentSettings\Items\000\251\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\251\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\251\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\251\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\251\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\252\DisplayName=M11_ZPlus
+Data%20Access%20View\DocumentSettings\Items\000\252\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M11_ZPlus"
+Data%20Access%20View\DocumentSettings\Items\000\252\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\252\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\252\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\252\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\252\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\253\DisplayName=M12_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\253\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M12_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\253\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\253\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\253\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\253\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\253\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\254\DisplayName=M12_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\254\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M12_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\254\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\254\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\254\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\254\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\254\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\255\DisplayName=M12_RotateMinus
+Data%20Access%20View\DocumentSettings\Items\000\255\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M12_RotateMinus"
+Data%20Access%20View\DocumentSettings\Items\000\255\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\255\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\255\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\255\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\255\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\256\DisplayName=M12_RotatePlus
+Data%20Access%20View\DocumentSettings\Items\000\256\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M12_RotatePlus"
+Data%20Access%20View\DocumentSettings\Items\000\256\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\256\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\256\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\256\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\256\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\257\DisplayName=M12_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\257\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M12_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\257\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\257\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\257\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\257\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\257\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\258\DisplayName=M12_SensorTool
+Data%20Access%20View\DocumentSettings\Items\000\258\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M12_SensorTool"
+Data%20Access%20View\DocumentSettings\Items\000\258\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\258\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\258\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\258\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\258\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\259\DisplayName=M12_SensorXminus
+Data%20Access%20View\DocumentSettings\Items\000\259\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M12_SensorXminus"
+Data%20Access%20View\DocumentSettings\Items\000\259\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\259\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\259\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\259\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\259\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\260\DisplayName=M12_SensorXplus
+Data%20Access%20View\DocumentSettings\Items\000\260\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M12_SensorXplus"
+Data%20Access%20View\DocumentSettings\Items\000\260\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\260\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\260\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\260\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\260\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\261\DisplayName=M12_SensorZminus
+Data%20Access%20View\DocumentSettings\Items\000\261\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M12_SensorZminus"
+Data%20Access%20View\DocumentSettings\Items\000\261\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\261\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\261\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\261\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\261\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\262\DisplayName=M12_SensorZplus
+Data%20Access%20View\DocumentSettings\Items\000\262\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M12_SensorZplus"
+Data%20Access%20View\DocumentSettings\Items\000\262\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\262\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\262\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\262\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\262\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\263\DisplayName=M12_Tool
+Data%20Access%20View\DocumentSettings\Items\000\263\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M12_Tool"
+Data%20Access%20View\DocumentSettings\Items\000\263\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\263\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\263\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\263\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\263\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\264\DisplayName=M12_XMinus
+Data%20Access%20View\DocumentSettings\Items\000\264\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M12_XMinus"
+Data%20Access%20View\DocumentSettings\Items\000\264\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\264\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\264\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\264\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\264\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\265\DisplayName=M12_XPlus
+Data%20Access%20View\DocumentSettings\Items\000\265\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M12_XPlus"
+Data%20Access%20View\DocumentSettings\Items\000\265\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\265\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\265\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\265\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\265\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\266\DisplayName=M12_ZMinus
+Data%20Access%20View\DocumentSettings\Items\000\266\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M12_ZMinus"
+Data%20Access%20View\DocumentSettings\Items\000\266\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\266\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\266\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\266\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\266\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\267\DisplayName=M12_ZPlus
+Data%20Access%20View\DocumentSettings\Items\000\267\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M12_ZPlus"
+Data%20Access%20View\DocumentSettings\Items\000\267\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\267\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\267\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\267\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\267\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\268\DisplayName=M13_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\268\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M13_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\268\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\268\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\268\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\268\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\268\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\269\DisplayName=M13_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\269\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M13_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\269\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\269\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\269\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\269\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\269\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\270\DisplayName=M13_RotateMinus
+Data%20Access%20View\DocumentSettings\Items\000\270\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M13_RotateMinus"
+Data%20Access%20View\DocumentSettings\Items\000\270\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\270\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\270\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\270\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\270\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\271\DisplayName=M13_RotatePlus
+Data%20Access%20View\DocumentSettings\Items\000\271\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M13_RotatePlus"
+Data%20Access%20View\DocumentSettings\Items\000\271\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\271\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\271\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\271\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\271\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\272\DisplayName=M13_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\272\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M13_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\272\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\272\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\272\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\272\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\272\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\273\DisplayName=M13_SensorTool
+Data%20Access%20View\DocumentSettings\Items\000\273\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M13_SensorTool"
+Data%20Access%20View\DocumentSettings\Items\000\273\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\273\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\273\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\273\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\273\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\274\DisplayName=M13_SensorXminus
+Data%20Access%20View\DocumentSettings\Items\000\274\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M13_SensorXminus"
+Data%20Access%20View\DocumentSettings\Items\000\274\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\274\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\274\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\274\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\274\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\275\DisplayName=M13_SensorXplus
+Data%20Access%20View\DocumentSettings\Items\000\275\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M13_SensorXplus"
+Data%20Access%20View\DocumentSettings\Items\000\275\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\275\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\275\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\275\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\275\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\276\DisplayName=M13_SensorZminus
+Data%20Access%20View\DocumentSettings\Items\000\276\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M13_SensorZminus"
+Data%20Access%20View\DocumentSettings\Items\000\276\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\276\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\276\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\276\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\276\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\277\DisplayName=M13_SensorZplus
+Data%20Access%20View\DocumentSettings\Items\000\277\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M13_SensorZplus"
+Data%20Access%20View\DocumentSettings\Items\000\277\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\277\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\277\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\277\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\277\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\278\DisplayName=M13_Tool
+Data%20Access%20View\DocumentSettings\Items\000\278\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M13_Tool"
+Data%20Access%20View\DocumentSettings\Items\000\278\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\278\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\278\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\278\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\278\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\279\DisplayName=M13_XMinus
+Data%20Access%20View\DocumentSettings\Items\000\279\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M13_XMinus"
+Data%20Access%20View\DocumentSettings\Items\000\279\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\279\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\279\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\279\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\279\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\280\DisplayName=M13_XPlus
+Data%20Access%20View\DocumentSettings\Items\000\280\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M13_XPlus"
+Data%20Access%20View\DocumentSettings\Items\000\280\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\280\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\280\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\280\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\280\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\281\DisplayName=M13_ZMinus
+Data%20Access%20View\DocumentSettings\Items\000\281\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M13_ZMinus"
+Data%20Access%20View\DocumentSettings\Items\000\281\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\281\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\281\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\281\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\281\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\282\DisplayName=M13_ZPlus
+Data%20Access%20View\DocumentSettings\Items\000\282\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M13_ZPlus"
+Data%20Access%20View\DocumentSettings\Items\000\282\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\282\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\282\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\282\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\282\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\283\DisplayName=M21_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\283\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M21_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\283\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\283\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\283\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\283\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\283\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\284\DisplayName=M21_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\284\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M21_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\284\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\284\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\284\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\284\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\284\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\285\DisplayName=M21_RotateMinus
+Data%20Access%20View\DocumentSettings\Items\000\285\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M21_RotateMinus"
+Data%20Access%20View\DocumentSettings\Items\000\285\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\285\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\285\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\285\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\285\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\286\DisplayName=M21_RotatePlus
+Data%20Access%20View\DocumentSettings\Items\000\286\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M21_RotatePlus"
+Data%20Access%20View\DocumentSettings\Items\000\286\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\286\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\286\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\286\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\286\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\287\DisplayName=M21_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\287\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M21_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\287\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\287\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\287\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\287\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\287\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\288\DisplayName=M21_SensorTool
+Data%20Access%20View\DocumentSettings\Items\000\288\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M21_SensorTool"
+Data%20Access%20View\DocumentSettings\Items\000\288\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\288\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\288\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\288\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\288\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\289\DisplayName=M21_SensorXminus
+Data%20Access%20View\DocumentSettings\Items\000\289\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M21_SensorXminus"
+Data%20Access%20View\DocumentSettings\Items\000\289\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\289\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\289\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\289\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\289\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\290\DisplayName=M21_SensorXplus
+Data%20Access%20View\DocumentSettings\Items\000\290\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M21_SensorXplus"
+Data%20Access%20View\DocumentSettings\Items\000\290\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\290\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\290\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\290\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\290\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\291\DisplayName=M21_SensorZminus
+Data%20Access%20View\DocumentSettings\Items\000\291\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M21_SensorZminus"
+Data%20Access%20View\DocumentSettings\Items\000\291\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\291\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\291\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\291\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\291\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\292\DisplayName=M21_SensorZplus
+Data%20Access%20View\DocumentSettings\Items\000\292\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M21_SensorZplus"
+Data%20Access%20View\DocumentSettings\Items\000\292\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\292\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\292\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\292\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\292\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\293\DisplayName=M21_Tool
+Data%20Access%20View\DocumentSettings\Items\000\293\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M21_Tool"
+Data%20Access%20View\DocumentSettings\Items\000\293\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\293\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\293\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\293\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\293\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\294\DisplayName=M21_XMinus
+Data%20Access%20View\DocumentSettings\Items\000\294\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M21_XMinus"
+Data%20Access%20View\DocumentSettings\Items\000\294\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\294\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\294\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\294\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\294\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\295\DisplayName=M21_XPlus
+Data%20Access%20View\DocumentSettings\Items\000\295\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M21_XPlus"
+Data%20Access%20View\DocumentSettings\Items\000\295\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\295\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\295\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\295\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\295\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\296\DisplayName=M21_ZMinus
+Data%20Access%20View\DocumentSettings\Items\000\296\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M21_ZMinus"
+Data%20Access%20View\DocumentSettings\Items\000\296\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\296\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\296\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\296\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\296\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\297\DisplayName=M21_ZPlus
+Data%20Access%20View\DocumentSettings\Items\000\297\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M21_ZPlus"
+Data%20Access%20View\DocumentSettings\Items\000\297\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\297\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\297\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\297\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\297\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\298\DisplayName=M22_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\298\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M22_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\298\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\298\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\298\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\298\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\298\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\299\DisplayName=M22_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\299\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M22_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\299\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\299\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\299\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\299\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\299\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\300\DisplayName=M22_RotateMinus
+Data%20Access%20View\DocumentSettings\Items\000\300\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M22_RotateMinus"
+Data%20Access%20View\DocumentSettings\Items\000\300\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\300\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\300\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\300\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\300\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\301\DisplayName=M22_RotatePlus
+Data%20Access%20View\DocumentSettings\Items\000\301\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M22_RotatePlus"
+Data%20Access%20View\DocumentSettings\Items\000\301\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\301\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\301\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\301\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\301\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\302\DisplayName=M22_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\302\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M22_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\302\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\302\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\302\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\302\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\302\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\303\DisplayName=M22_SensorTool
+Data%20Access%20View\DocumentSettings\Items\000\303\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M22_SensorTool"
+Data%20Access%20View\DocumentSettings\Items\000\303\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\303\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\303\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\303\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\303\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\304\DisplayName=M22_SensorXminus
+Data%20Access%20View\DocumentSettings\Items\000\304\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M22_SensorXminus"
+Data%20Access%20View\DocumentSettings\Items\000\304\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\304\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\304\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\304\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\304\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\305\DisplayName=M22_SensorXplus
+Data%20Access%20View\DocumentSettings\Items\000\305\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M22_SensorXplus"
+Data%20Access%20View\DocumentSettings\Items\000\305\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\305\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\305\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\305\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\305\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\306\DisplayName=M22_SensorZminus
+Data%20Access%20View\DocumentSettings\Items\000\306\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M22_SensorZminus"
+Data%20Access%20View\DocumentSettings\Items\000\306\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\306\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\306\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\306\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\306\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\307\DisplayName=M22_SensorZplus
+Data%20Access%20View\DocumentSettings\Items\000\307\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M22_SensorZplus"
+Data%20Access%20View\DocumentSettings\Items\000\307\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\307\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\307\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\307\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\307\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\308\DisplayName=M22_Tool
+Data%20Access%20View\DocumentSettings\Items\000\308\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M22_Tool"
+Data%20Access%20View\DocumentSettings\Items\000\308\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\308\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\308\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\308\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\308\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\309\DisplayName=M22_XMinus
+Data%20Access%20View\DocumentSettings\Items\000\309\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M22_XMinus"
+Data%20Access%20View\DocumentSettings\Items\000\309\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\309\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\309\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\309\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\309\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\310\DisplayName=M22_XPlus
+Data%20Access%20View\DocumentSettings\Items\000\310\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M22_XPlus"
+Data%20Access%20View\DocumentSettings\Items\000\310\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\310\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\310\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\310\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\310\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\311\DisplayName=M22_ZMinus
+Data%20Access%20View\DocumentSettings\Items\000\311\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M22_ZMinus"
+Data%20Access%20View\DocumentSettings\Items\000\311\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\311\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\311\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\311\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\311\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\312\DisplayName=M22_ZPlus
+Data%20Access%20View\DocumentSettings\Items\000\312\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M22_ZPlus"
+Data%20Access%20View\DocumentSettings\Items\000\312\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\312\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\312\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\312\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\312\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\313\DisplayName=M23_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\313\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M23_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\313\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\313\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\313\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\313\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\313\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\314\DisplayName=M23_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\314\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M23_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\314\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\314\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\314\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\314\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\314\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\315\DisplayName=M23_RotateMinus
+Data%20Access%20View\DocumentSettings\Items\000\315\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M23_RotateMinus"
+Data%20Access%20View\DocumentSettings\Items\000\315\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\315\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\315\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\315\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\315\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\316\DisplayName=M23_RotatePlus
+Data%20Access%20View\DocumentSettings\Items\000\316\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M23_RotatePlus"
+Data%20Access%20View\DocumentSettings\Items\000\316\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\316\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\316\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\316\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\316\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\317\DisplayName=M23_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\317\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M23_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\317\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\317\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\317\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\317\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\317\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\318\DisplayName=M23_SensorTool
+Data%20Access%20View\DocumentSettings\Items\000\318\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M23_SensorTool"
+Data%20Access%20View\DocumentSettings\Items\000\318\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\318\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\318\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\318\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\318\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\319\DisplayName=M23_SensorXminus
+Data%20Access%20View\DocumentSettings\Items\000\319\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M23_SensorXminus"
+Data%20Access%20View\DocumentSettings\Items\000\319\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\319\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\319\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\319\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\319\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\320\DisplayName=M23_SensorXplus
+Data%20Access%20View\DocumentSettings\Items\000\320\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M23_SensorXplus"
+Data%20Access%20View\DocumentSettings\Items\000\320\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\320\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\320\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\320\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\320\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\321\DisplayName=M23_SensorZminus
+Data%20Access%20View\DocumentSettings\Items\000\321\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M23_SensorZminus"
+Data%20Access%20View\DocumentSettings\Items\000\321\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\321\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\321\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\321\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\321\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\322\DisplayName=M23_SensorZplus
+Data%20Access%20View\DocumentSettings\Items\000\322\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M23_SensorZplus"
+Data%20Access%20View\DocumentSettings\Items\000\322\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\322\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\322\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\322\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\322\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\323\DisplayName=M23_Tool
+Data%20Access%20View\DocumentSettings\Items\000\323\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M23_Tool"
+Data%20Access%20View\DocumentSettings\Items\000\323\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\323\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\323\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\323\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\323\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\324\DisplayName=M23_XMinus
+Data%20Access%20View\DocumentSettings\Items\000\324\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M23_XMinus"
+Data%20Access%20View\DocumentSettings\Items\000\324\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\324\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\324\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\324\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\324\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\325\DisplayName=M23_XPlus
+Data%20Access%20View\DocumentSettings\Items\000\325\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M23_XPlus"
+Data%20Access%20View\DocumentSettings\Items\000\325\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\325\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\325\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\325\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\325\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\326\DisplayName=M23_ZMinus
+Data%20Access%20View\DocumentSettings\Items\000\326\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M23_ZMinus"
+Data%20Access%20View\DocumentSettings\Items\000\326\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\326\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\326\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\326\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\326\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\327\DisplayName=M23_ZPlus
+Data%20Access%20View\DocumentSettings\Items\000\327\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.M23_ZPlus"
+Data%20Access%20View\DocumentSettings\Items\000\327\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\327\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\327\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\327\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\327\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\328\DisplayName=N1_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\328\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N1_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\328\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\328\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\328\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\328\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\328\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\329\DisplayName=N1_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\329\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N1_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\329\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\329\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\329\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\329\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\329\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\330\DisplayName=N1_RotateMinus
+Data%20Access%20View\DocumentSettings\Items\000\330\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N1_RotateMinus"
+Data%20Access%20View\DocumentSettings\Items\000\330\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\330\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\330\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\330\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\330\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\331\DisplayName=N1_RotatePlus
+Data%20Access%20View\DocumentSettings\Items\000\331\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N1_RotatePlus"
+Data%20Access%20View\DocumentSettings\Items\000\331\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\331\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\331\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\331\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\331\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\332\DisplayName=N1_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\332\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N1_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\332\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\332\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\332\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\332\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\332\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\333\DisplayName=N1_SensorRMinus
+Data%20Access%20View\DocumentSettings\Items\000\333\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N1_SensorRMinus"
+Data%20Access%20View\DocumentSettings\Items\000\333\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\333\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\333\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\333\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\333\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\334\DisplayName=N1_SensorRPlus
+Data%20Access%20View\DocumentSettings\Items\000\334\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N1_SensorRPlus"
+Data%20Access%20View\DocumentSettings\Items\000\334\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\334\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\334\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\334\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\334\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\335\DisplayName=N2_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\335\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N2_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\335\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\335\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\335\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\335\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\335\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\336\DisplayName=N2_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\336\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N2_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\336\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\336\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\336\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\336\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\336\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\337\DisplayName=N2_RotateMinus
+Data%20Access%20View\DocumentSettings\Items\000\337\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N2_RotateMinus"
+Data%20Access%20View\DocumentSettings\Items\000\337\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\337\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\337\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\337\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\337\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\338\DisplayName=N2_RotatePlus
+Data%20Access%20View\DocumentSettings\Items\000\338\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N2_RotatePlus"
+Data%20Access%20View\DocumentSettings\Items\000\338\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\338\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\338\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\338\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\338\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\339\DisplayName=N2_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\339\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N2_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\339\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\339\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\339\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\339\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\339\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\340\DisplayName=N2_SensorRMinus
+Data%20Access%20View\DocumentSettings\Items\000\340\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N2_SensorRMinus"
+Data%20Access%20View\DocumentSettings\Items\000\340\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\340\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\340\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\340\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\340\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\341\DisplayName=N2_SensorRPlus
+Data%20Access%20View\DocumentSettings\Items\000\341\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N2_SensorRPlus"
+Data%20Access%20View\DocumentSettings\Items\000\341\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\341\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\341\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\341\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\341\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\342\DisplayName=N3_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\342\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N3_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\342\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\342\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\342\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\342\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\342\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\343\DisplayName=N3_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\343\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N3_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\343\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\343\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\343\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\343\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\343\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\344\DisplayName=N3_RotateMinus
+Data%20Access%20View\DocumentSettings\Items\000\344\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N3_RotateMinus"
+Data%20Access%20View\DocumentSettings\Items\000\344\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\344\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\344\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\344\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\344\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\345\DisplayName=N3_RotatePlus
+Data%20Access%20View\DocumentSettings\Items\000\345\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N3_RotatePlus"
+Data%20Access%20View\DocumentSettings\Items\000\345\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\345\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\345\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\345\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\345\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\346\DisplayName=N3_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\346\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N3_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\346\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\346\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\346\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\346\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\346\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\347\DisplayName=N3_SensorRMinus
+Data%20Access%20View\DocumentSettings\Items\000\347\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N3_SensorRMinus"
+Data%20Access%20View\DocumentSettings\Items\000\347\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\347\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\347\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\347\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\347\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\348\DisplayName=N3_SensorRPlus
+Data%20Access%20View\DocumentSettings\Items\000\348\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N3_SensorRPlus"
+Data%20Access%20View\DocumentSettings\Items\000\348\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\348\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\348\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\348\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\348\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\349\DisplayName=N4_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\349\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N4_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\349\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\349\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\349\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\349\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\349\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\350\DisplayName=N4_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\350\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N4_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\350\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\350\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\350\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\350\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\350\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\351\DisplayName=N4_RotateMinus
+Data%20Access%20View\DocumentSettings\Items\000\351\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N4_RotateMinus"
+Data%20Access%20View\DocumentSettings\Items\000\351\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\351\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\351\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\351\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\351\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\352\DisplayName=N4_RotatePlus
+Data%20Access%20View\DocumentSettings\Items\000\352\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N4_RotatePlus"
+Data%20Access%20View\DocumentSettings\Items\000\352\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\352\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\352\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\352\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\352\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\353\DisplayName=N4_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\353\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N4_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\353\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\353\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\353\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\353\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\353\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\354\DisplayName=N4_SensorRMinus
+Data%20Access%20View\DocumentSettings\Items\000\354\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N4_SensorRMinus"
+Data%20Access%20View\DocumentSettings\Items\000\354\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\354\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\354\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\354\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\354\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\355\DisplayName=N4_SensorRPlus
+Data%20Access%20View\DocumentSettings\Items\000\355\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.N4_SensorRPlus"
+Data%20Access%20View\DocumentSettings\Items\000\355\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\355\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\355\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\355\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\355\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\356\DisplayName=S1_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\356\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.S1_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\356\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\356\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\356\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\356\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\356\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\357\DisplayName=S1_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\357\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.S1_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\357\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\357\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\357\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\357\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\357\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\358\DisplayName=S1_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\358\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.S1_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\358\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\358\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\358\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\358\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\358\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\359\DisplayName=S2_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\359\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.S2_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\359\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\359\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\359\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\359\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\359\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\360\DisplayName=S2_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\360\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.S2_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\360\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\360\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\360\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\360\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\360\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\361\DisplayName=S2_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\361\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.S2_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\361\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\361\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\361\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\361\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\361\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\362\DisplayName=U0_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\362\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U0_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\362\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\362\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\362\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\362\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\362\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\363\DisplayName=U0_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\363\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U0_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\363\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\363\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\363\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\363\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\363\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\364\DisplayName=U0_RotateMinus
+Data%20Access%20View\DocumentSettings\Items\000\364\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U0_RotateMinus"
+Data%20Access%20View\DocumentSettings\Items\000\364\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\364\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\364\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\364\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\364\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\365\DisplayName=U0_RotatePlus
+Data%20Access%20View\DocumentSettings\Items\000\365\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U0_RotatePlus"
+Data%20Access%20View\DocumentSettings\Items\000\365\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\365\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\365\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\365\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\365\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\366\DisplayName=U0_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\366\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U0_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\366\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\366\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\366\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\366\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\366\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\367\DisplayName=U0_SensorRMinus
+Data%20Access%20View\DocumentSettings\Items\000\367\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U0_SensorRMinus"
+Data%20Access%20View\DocumentSettings\Items\000\367\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\367\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\367\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\367\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\367\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\368\DisplayName=U0_SensorRPlus
+Data%20Access%20View\DocumentSettings\Items\000\368\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U0_SensorRPlus"
+Data%20Access%20View\DocumentSettings\Items\000\368\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\368\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\368\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\368\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\368\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\369\DisplayName=U11_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\369\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U11_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\369\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\369\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\369\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\369\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\369\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\370\DisplayName=U12_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\370\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U12_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\370\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\370\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\370\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\370\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\370\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\371\DisplayName=U13_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\371\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U13_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\371\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\371\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\371\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\371\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\371\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\372\DisplayName=U1_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\372\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U1_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\372\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\372\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\372\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\372\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\372\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\373\DisplayName=U1_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\373\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U1_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\373\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\373\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\373\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\373\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\373\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\374\DisplayName=U1_PushMinus
+Data%20Access%20View\DocumentSettings\Items\000\374\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U1_PushMinus"
+Data%20Access%20View\DocumentSettings\Items\000\374\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\374\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\374\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\374\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\374\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\375\DisplayName=U1_PushPlus
+Data%20Access%20View\DocumentSettings\Items\000\375\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U1_PushPlus"
+Data%20Access%20View\DocumentSettings\Items\000\375\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\375\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\375\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\375\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\375\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\376\DisplayName=U1_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\376\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U1_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\376\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\376\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\376\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\376\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\376\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\377\DisplayName=U1_SensorPMinus
+Data%20Access%20View\DocumentSettings\Items\000\377\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U1_SensorPMinus"
+Data%20Access%20View\DocumentSettings\Items\000\377\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\377\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\377\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\377\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\377\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\378\DisplayName=U1_SensorPPlus
+Data%20Access%20View\DocumentSettings\Items\000\378\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U1_SensorPPlus"
+Data%20Access%20View\DocumentSettings\Items\000\378\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\378\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\378\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\378\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\378\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\379\DisplayName=U21_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\379\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U21_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\379\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\379\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\379\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\379\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\379\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\380\DisplayName=U22_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\380\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U22_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\380\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\380\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\380\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\380\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\380\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\381\DisplayName=U23_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\381\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U23_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\381\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\381\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\381\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\381\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\381\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\382\DisplayName=U2_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\382\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U2_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\382\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\382\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\382\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\382\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\382\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\383\DisplayName=U2_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\383\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U2_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\383\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\383\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\383\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\383\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\383\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\384\DisplayName=U2_PushMinus
+Data%20Access%20View\DocumentSettings\Items\000\384\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U2_PushMinus"
+Data%20Access%20View\DocumentSettings\Items\000\384\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\384\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\384\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\384\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\384\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\385\DisplayName=U2_PushPlus
+Data%20Access%20View\DocumentSettings\Items\000\385\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U2_PushPlus"
+Data%20Access%20View\DocumentSettings\Items\000\385\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\385\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\385\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\385\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\385\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\386\DisplayName=U2_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\386\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U2_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\386\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\386\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\386\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\386\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\386\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\387\DisplayName=U2_SensorPMinus
+Data%20Access%20View\DocumentSettings\Items\000\387\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U2_SensorPMinus"
+Data%20Access%20View\DocumentSettings\Items\000\387\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\387\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\387\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\387\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\387\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\388\DisplayName=U2_SensorPPlus
+Data%20Access%20View\DocumentSettings\Items\000\388\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U2_SensorPPlus"
+Data%20Access%20View\DocumentSettings\Items\000\388\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\388\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\388\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\388\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\388\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\389\DisplayName=U31_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\389\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U31_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\389\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\389\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\389\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\389\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\389\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\390\DisplayName=U32_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\390\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U32_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\390\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\390\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\390\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\390\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\390\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\391\DisplayName=U33_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\391\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U33_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\391\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\391\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\391\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\391\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\391\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\392\DisplayName=U3_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\392\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U3_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\392\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\392\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\392\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\392\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\392\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\393\DisplayName=U3_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\393\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U3_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\393\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\393\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\393\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\393\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\393\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\394\DisplayName=U3_PushMinus
+Data%20Access%20View\DocumentSettings\Items\000\394\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U3_PushMinus"
+Data%20Access%20View\DocumentSettings\Items\000\394\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\394\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\394\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\394\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\394\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\395\DisplayName=U3_PushPlus
+Data%20Access%20View\DocumentSettings\Items\000\395\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U3_PushPlus"
+Data%20Access%20View\DocumentSettings\Items\000\395\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\395\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\395\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\395\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\395\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\396\DisplayName=U3_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\396\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U3_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\396\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\396\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\396\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\396\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\396\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\397\DisplayName=U3_SensorPMinus
+Data%20Access%20View\DocumentSettings\Items\000\397\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U3_SensorPMinus"
+Data%20Access%20View\DocumentSettings\Items\000\397\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\397\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\397\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\397\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\397\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\398\DisplayName=U3_SensorPPlus
+Data%20Access%20View\DocumentSettings\Items\000\398\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.U3_SensorPPlus"
+Data%20Access%20View\DocumentSettings\Items\000\398\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\398\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\398\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\398\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\398\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\399\DisplayName=W1in0_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\399\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W1in0_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\399\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\399\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\399\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\399\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\399\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\400\DisplayName=W1in0_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\400\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W1in0_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\400\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\400\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\400\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\400\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\400\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\401\DisplayName=W1in0_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\401\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W1in0_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\401\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\401\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\401\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\401\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\401\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\402\DisplayName=W1in0_WarehouseIn
+Data%20Access%20View\DocumentSettings\Items\000\402\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W1in0_WarehouseIn"
+Data%20Access%20View\DocumentSettings\Items\000\402\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\402\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\402\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\402\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\402\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\403\DisplayName=W1in1_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\403\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W1in1_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\403\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\403\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\403\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\403\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\403\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\404\DisplayName=W1in1_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\404\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W1in1_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\404\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\404\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\404\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\404\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\404\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\405\DisplayName=W1in1_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\405\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W1in1_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\405\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\405\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\405\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\405\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\405\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\406\DisplayName=W1out1_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\406\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W1out1_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\406\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\406\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\406\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\406\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\406\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\407\DisplayName=W1out1_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\407\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W1out1_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\407\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\407\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\407\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\407\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\407\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\408\DisplayName=W1out1_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\408\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W1out1_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\408\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\408\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\408\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\408\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\408\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\409\DisplayName=W1out1_WarehouseIn
+Data%20Access%20View\DocumentSettings\Items\000\409\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W1out1_WarehouseIn"
+Data%20Access%20View\DocumentSettings\Items\000\409\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\409\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\409\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\409\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\409\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\410\DisplayName=W2_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\410\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W2_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\410\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\410\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\410\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\410\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\410\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\411\DisplayName=W2_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\411\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W2_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\411\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\411\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\411\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\411\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\411\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\412\DisplayName=W2_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\412\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W2_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\412\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\412\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\412\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\412\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\412\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\413\DisplayName=W2in1_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\413\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W2in1_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\413\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\413\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\413\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\413\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\413\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\414\DisplayName=W2in1_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\414\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W2in1_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\414\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\414\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\414\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\414\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\414\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\415\DisplayName=W2in1_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\415\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W2in1_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\415\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\415\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\415\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\415\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\415\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\416\DisplayName=W2in1_WarehouseIn
+Data%20Access%20View\DocumentSettings\Items\000\416\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W2in1_WarehouseIn"
+Data%20Access%20View\DocumentSettings\Items\000\416\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\416\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\416\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\416\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\416\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\417\DisplayName=W2out1_Motor1Minus
+Data%20Access%20View\DocumentSettings\Items\000\417\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W2out1_Motor1Minus"
+Data%20Access%20View\DocumentSettings\Items\000\417\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\417\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\417\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\417\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\417\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\418\DisplayName=W2out1_Motor1Plus
+Data%20Access%20View\DocumentSettings\Items\000\418\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W2out1_Motor1Plus"
+Data%20Access%20View\DocumentSettings\Items\000\418\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\418\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\418\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\418\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\418\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\419\DisplayName=W2out1_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\419\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W2out1_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\419\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\419\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\419\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\419\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\419\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\420\DisplayName=W2out1_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\420\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W2out1_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\420\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\420\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\420\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\420\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\420\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\421\DisplayName=W2out1_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\421\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W2out1_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\421\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\421\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\421\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\421\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\421\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\422\DisplayName=W2out1_SensorP1
+Data%20Access%20View\DocumentSettings\Items\000\422\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W2out1_SensorP1"
+Data%20Access%20View\DocumentSettings\Items\000\422\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\422\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\422\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\422\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\422\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\423\DisplayName=W3_MotorMinus
+Data%20Access%20View\DocumentSettings\Items\000\423\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W3_MotorMinus"
+Data%20Access%20View\DocumentSettings\Items\000\423\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\423\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\423\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\423\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\423\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\424\DisplayName=W3_MotorPlus
+Data%20Access%20View\DocumentSettings\Items\000\424\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W3_MotorPlus"
+Data%20Access%20View\DocumentSettings\Items\000\424\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\424\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\424\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\424\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\424\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\425\DisplayName=W3_RotateMinus
+Data%20Access%20View\DocumentSettings\Items\000\425\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W3_RotateMinus"
+Data%20Access%20View\DocumentSettings\Items\000\425\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\425\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\425\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\425\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\425\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\426\DisplayName=W3_RotatePlus
+Data%20Access%20View\DocumentSettings\Items\000\426\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W3_RotatePlus"
+Data%20Access%20View\DocumentSettings\Items\000\426\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\426\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\426\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\426\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\426\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\427\DisplayName=W3_SensorP
+Data%20Access%20View\DocumentSettings\Items\000\427\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W3_SensorP"
+Data%20Access%20View\DocumentSettings\Items\000\427\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\427\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\427\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\427\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\427\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\428\DisplayName=W3_SensorRMinus
+Data%20Access%20View\DocumentSettings\Items\000\428\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W3_SensorRMinus"
+Data%20Access%20View\DocumentSettings\Items\000\428\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\428\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\428\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\428\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\428\MonitoringParameters\SamplingInterval=300
+Data%20Access%20View\DocumentSettings\Items\000\429\DisplayName=W3_SensorRPlus
+Data%20Access%20View\DocumentSettings\Items\000\429\NodeId="ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL.W3_SensorRPlus"
+Data%20Access%20View\DocumentSettings\Items\000\429\Status=2
+Data%20Access%20View\DocumentSettings\Items\000\429\MonitoringMode=2
+Data%20Access%20View\DocumentSettings\Items\000\429\MonitoringParameters\DiscardOldest=1
+Data%20Access%20View\DocumentSettings\Items\000\429\MonitoringParameters\QueueSize=1
+Data%20Access%20View\DocumentSettings\Items\000\429\MonitoringParameters\SamplingInterval=300
+
+[Attribute%20Plugin]
+Act_OnOff_Checked=true
+
+[Reference%20Plugin]
+Act_OnOff_Checked=true
+Act_ShowHierarchical_Checked=true
+Act_ShowNonHierarchical_Checked=true
+Cmb_BrowseDirection_State=0

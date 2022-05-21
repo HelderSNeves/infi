@@ -2,7 +2,17 @@
 #define ON 1
 #define OFF 0
 
-int main() {
+using namespace OpcUa;
+
+class SubClient : public SubscriptionHandler
+{
+	void DataChange(uint32_t handle, const Node& node, const Variant& val, AttributeId attr) override
+	{
+		std::cout << "Received DataChange event, value of Node " << node << " is now: " << val.ToString() << std::endl;
+	}
+};
+
+int main(int argc, char** argv) {
 	//CRIAR TAPETES
 	conveyor_belt TP5(5, 0 ,0), TP6(6, 1, 0), TP7(7, 1, 2), TP8(8, 3, 3), TP9(9, 4, 0), TP10(10, 0, 0), TP11(11, 0, 0), TP12(12, 0, 0), TP13(13, 0, 0), TP14(14, 0, 0), TP15(15, 0, 0), TP16(16, 0, 0);
 	//CRIAR MAQUINAS
@@ -13,12 +23,36 @@ int main() {
 	//CRIAR VETOR DAS PEÇAS QUE SE ENCONTRAM A CIRCULAR NOS TAPETES
 	std::vector<piece> pecas;
 
+	
+
+	//*******************LIGAÇÂO OPC UA************************
+
+		auto logger = spdlog::stderr_color_mt("client");
+		
+		std::string endpoint = "opc.tcp://localhost:4840";
+		OpcUa::UaClient client(logger);
+		client.Connect(endpoint);
+
+		OpcUa::Node root = client.GetRootNode();
+
+		while (1) {
+			bool MotorMinus = (bool)client.GetNode("ns=4;s=|var|CODESYS Control Win V3 x64.Application.GVL").GetValue();
+			std::cout << MotorMinus << std::endl;
+		}
+
+	
+		/*
 	while (1) {
+
+		//*******************ATUALIZAR VARIÁVEIS OPC_UA************************
+
+
 
 		//*******************DISPARAR TRANSIÇÕES************************
 
 		//TRANSIÇÕES TAPETE 5
-		if (TP5.estado == 0 /*and armazem envia peça */) {
+		
+		if (TP5.estado == 0 /*and armazem envia peça ) {
 			TP5.estado == 1;
 		}
 		if (TP5.estado == 1 and TP6.P() == 0) {
@@ -34,7 +68,7 @@ int main() {
 		if (TP6.estado == 1 and TP6.P() == 1) {
 			TP6.estado = 2;
 		}
-		if (TP6.estado == 2 /*and proxima operacao peça que esta no TP6 == TP6.maq_cima and M1.P()==0*/) {
+		if (TP6.estado == 2 /*and proxima operacao peça que esta no TP6 == TP6.maq_cima and M1.P()==0) {
 			TP6.estado = 3;
 		}
 		if (TP6.estado == 3 and M1.P() == 0) {
@@ -49,7 +83,7 @@ int main() {
 		if (TP6.estado == 6 and TP6.orientacao == 0) {
 			TP6.estado = 0;
 		}
-		if (TP6.estado == 2 /*and proxima operacao peça que esta no TP6 != TP6.maq_cima ou M1.P()==1*/) {
+		if (TP6.estado == 2 /*and proxima operacao peça que esta no TP6 != TP6.maq_cima ou M1.P()==1) {
 			TP6.estado = 7;
 		}
 		if (TP6.estado == 7 and TP7.P() == 0) {
@@ -89,7 +123,7 @@ int main() {
 		if (TP7.estado == 1 and TP7.P() == 1) {
 			TP7.estado = 2;
 		}
-		if (TP7.estado == 2 /*and realiza operacao TP7.maq_cima*/) {
+		if (TP7.estado == 2 /*and realiza operacao TP7.maq_cima) {
 			TP7.estado = 3;
 		}
 		if (TP7.estado == 3 and M2.P() == 0) {
@@ -104,7 +138,7 @@ int main() {
 		if (TP7.estado == 6 and TP7.orientacao == 0) {
 			TP7.estado = 0;
 		}
-		if (TP7.estado == 2 /*and realiza operacao TP7.maq_baixo*/) {
+		if (TP7.estado == 2 /*and realiza operacao TP7.maq_baixo) {
 			TP7.estado = 7;
 		}
 		if (TP7.estado == 7 and M3.P() == 0) {
@@ -125,7 +159,7 @@ int main() {
 		if (TP7.estado == 7 and M3.P() == 1) {
 			TP7.estado = 11;
 		}
-		if (TP7.estado == 2 /*and nao realiza operaçao TP7.maq_cima nem TP7.maq_baixo*/) {
+		if (TP7.estado == 2 /*and nao realiza operaçao TP7.maq_cima nem TP7.maq_baixo) {
 			TP7.estado = 11;
 		}
 		if (TP7.estado == 11 and TP8.P() == 0) {
@@ -165,7 +199,7 @@ int main() {
 		if (TP8.estado == 1 and TP8.P() == 1) {
 			TP8.estado = 2;
 		}
-		if (TP8.estado == 2 /*and realiza operacao TP8.maq_cima*/) {
+		if (TP8.estado == 2 /*and realiza operacao TP8.maq_cima) {
 			TP8.estado = 3;
 		}
 		if (TP8.estado == 3 and M4.P() == 0) {
@@ -180,7 +214,7 @@ int main() {
 		if (TP8.estado == 6 and TP8.orientacao == 0) {
 			TP8.estado = 0;
 		}
-		if (TP8.estado == 2 /*and realiza operacao TP8.maq_baixo*/) {
+		if (TP8.estado == 2 /*and realiza operacao TP8.maq_baixo) {
 			TP8.estado = 7;
 		}
 		if (TP8.estado == 7 and M5.P() == 0) {
@@ -201,7 +235,7 @@ int main() {
 		if (TP8.estado == 7 and M4.P() == 1) {
 			TP8.estado = 11;
 		}
-		if (TP8.estado == 2 /*and nao realiza operaçao TP8.maq_cima nem TP8.maq_baixo*/) {
+		if (TP8.estado == 2 /*and nao realiza operaçao TP8.maq_cima nem TP8.maq_baixo) {
 			TP8.estado = 11;
 		}
 		if (TP8.estado == 11 and TP8.P() == 0) {
@@ -241,7 +275,7 @@ int main() {
 		if (TP9.estado == 1 and TP9.P() == 1) {
 			TP9.estado = 2;
 		}
-		if (TP9.estado == 2 /*and realiza operação TP9.maq_cima*/) {
+		if (TP9.estado == 2 /*and realiza operação TP9.maq_cima) {
 			TP9.estado = 3;
 		}
 		if (TP9.estado == 3 and M6.P() == 0) {
@@ -256,10 +290,10 @@ int main() {
 		if (TP9.estado == 7 and TP7.orientacao == 0) {
 			TP9.estado = 0;
 		}
-		if (TP9.estado == 2 /*and nao realiza operação TP9.maq_cima ou M6.P()==1*/) {
+		if (TP9.estado == 2 /*and nao realiza operação TP9.maq_cima ou M6.P()==1) {
 			TP9.estado == 8;
 		}
-		if (TP9.estado == 8 /*and acabou operações*/) {
+		if (TP9.estado == 8 /*and acabou operações) {
 			TP9.estado = 9;
 		}
 		if (TP9.estado == 9 and TP10.P() == 0) {
@@ -268,7 +302,7 @@ int main() {
 		if (TP9.estado == 10 and TP10.P() == 1) {
 			TP9.estado = 0;
 		}
-		if (TP9.estado == 8 /*and nao acabou operações*/) {
+		if (TP9.estado == 8 /*and nao acabou operações) {
 			TP9.estado = 11;
 		}
 		if (TP9.estado == 11 and TP11.P() == 0) {
@@ -299,10 +333,10 @@ int main() {
 		if (TP10.estado == 0 and TP9.envia_peca == 1) {
 			TP10.estado = 1;
 		}
-		if (TP10.estado == 1 /*and armazem não esta cheio*/) {
+		if (TP10.estado == 1 /*and armazem não esta cheio) {
 			TP10.estado = 2;
 		}
-		if (TP10.estado == 2 /*and peça entrou armazem*/) {
+		if (TP10.estado == 2 /*and peça entrou armazem) {
 			TP10.estado = 0;
 		}
 		//TRANSIÇÕES TAPETE 11
@@ -405,7 +439,7 @@ int main() {
 		if (M1.estado == 1 and M1.P() == 1) {
 			M1.estado = 2;
 		}
-		if (M1.estado == 2 /*and passou tempo de operação*/) {
+		if (M1.estado == 2 /*and passou tempo de operação) {
 			M1.estado = 3;
 		}
 		if (M1.estado == 3 and TP6.P() == 0) {
@@ -424,7 +458,7 @@ int main() {
 		if (M2.estado == 1 and M2.P() == 1) {
 			M2.estado = 2;
 		}
-		if (M2.estado == 2 /*and passou tempo de operação*/) {
+		if (M2.estado == 2 /*and passou tempo de operação) {
 			M2.estado = 3;
 		}
 		if (M2.estado == 3 and TP7.P() == 0) {
@@ -443,7 +477,7 @@ int main() {
 		if (M3.estado == 1 and M3.P() == 1) {
 			M3.estado = 2;
 		}
-		if (M3.estado == 2 /*and passou tempo de operação*/) {
+		if (M3.estado == 2 /*and passou tempo de operação) {
 			M3.estado = 3;
 		}
 		if (M3.estado == 3 and TP7.P() == 0) {
@@ -462,7 +496,7 @@ int main() {
 		if (M4.estado == 1 and M4.P() == 1) {
 			M4.estado = 2;
 		}
-		if (M4.estado == 2 /*and passou tempo de operação*/) {
+		if (M4.estado == 2 /*and passou tempo de operação) {
 			M4.estado = 3;
 		}
 		if (M4.estado == 3 and TP8.P() == 0) {
@@ -481,7 +515,7 @@ int main() {
 		if (M5.estado == 1 and M5.P() == 1) {
 			M5.estado = 2;
 		}
-		if (M5.estado == 2 /*and passou tempo de operação*/) {
+		if (M5.estado == 2 /*and passou tempo de operação) {
 			M5.estado = 3;
 		}
 		if (M5.estado == 3 and TP8.P() == 0) {
@@ -500,7 +534,7 @@ int main() {
 		if (M6.estado == 1 and M6.P() == 1) {
 			M6.estado = 2;
 		}
-		if (M6.estado == 2 /*and passou tempo de operação*/) {
+		if (M6.estado == 2 /*and passou tempo de operação) {
 			M6.estado = 3;
 		}
 		if (M6.estado == 3 and TP9.P() == 0) {
@@ -798,5 +832,5 @@ int main() {
 			M6.move_left();
 		}
 
-	}
+	}*/
 }
