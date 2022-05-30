@@ -190,7 +190,7 @@ public class ERP {
 			//System.out.println("ASDasdsadsadasdsadsadsadasdasdasdasdasda");
 			String[] parts = client_order[0].get_status().split("-");
 			System.out.println(parts[0] + "asdasdsadsadsadasdasdasdsadasdasdasdasdasdas" + parts[1]);
-			if(parts[0].equals("Supplier")) {
+			/*if(parts[0].equals("Supplier")) {
 				// Pecas P3, P4 ou P5 - unica possibilidade e mandar vir P2
 				// Pecas P7 - vem de P4 e P4 so vem de P2
 				// Pecas P9 - vem a partir de P7 que vem de P4 que so vem de P2
@@ -244,60 +244,33 @@ public class ERP {
 	    			}
 	    		}	
 				
-			}else if (parts[0].equals("None")) {
+			}else */if (parts[0].equals("None")) {
 				System.out.println("Boas do none");
 				// Pecas P3, P4 ou P5 - enica possibilidade e mandar vir P2
 				// Pecas P7 - vem de P4 e P4 so vem de P2
 				// Pecas P9 - vem a partir de P7 que vem de P4 que so vem de P2
 				if(client_order[0].get_workPiece().equals("P3") || client_order[0].get_workPiece().equals("P4") || client_order[0].get_workPiece().equals("P5") || client_order[0].get_workPiece().equals("P7") || client_order[0].get_workPiece().equals("P9")) {
 	    			
-	    			if(Integer.parseInt(parts[1]) > 4) {
 	    				warehouseIn.set_client_order(client_order[0]);
 	    				warehouseIn.set_pieces_to_be_done(Integer.parseInt(parts[1]));
 	    				warehouseIn.set_flag_supply("2C");
-	    				String aux = "Supplier-";
-	    				int aux1 = Integer.parseInt(parts[1]) - 4;
-	    				aux = aux.concat(Integer.toString(aux1));
-	    				aux = aux.concat("-");
+	    				String aux = "Finished-0-";
 	    				aux = aux.concat(parts[2]);
 	    				System.out.println(aux);
 	    				client_order[0].set_status(aux);
-	    				
-	    			}
-	    			if(Integer.parseInt(parts[1]) <= 4) {
-	    				warehouseIn.set_client_order(client_order[0]);
-	    				warehouseIn.set_pieces_to_be_done(Integer.parseInt(parts[1]));
-	    				warehouseIn.set_flag_supply("2C");
-	    				String status_aux = "Finished-0-";
-	    				status_aux = status_aux.concat(parts[2]);
-	    				client_order[0].set_status(status_aux);
-	    			}
 	    		}
 				
 				// Pecas P6 - vamos fazer a partir de P1
 				// Pecas P8 - vem de P6 e P6 vamos fazer a partir de P1
 				if(client_order[0].get_workPiece().equals("P6") || client_order[0].get_workPiece().equals("P8")) {
 	    			System.out.println("Boas do P6");
-	    			if(Integer.parseInt(parts[1]) > 4) {
-	    				warehouseIn.set_client_order(client_order[0]);
-	    				warehouseIn.set_pieces_to_be_done(Integer.parseInt(parts[1]));
-	    				warehouseIn.set_flag_supply("1C");
-	    				String aux = "Supplier-";
-	    				int aux1 = Integer.parseInt(parts[1]) - 4;
-	    				aux = aux.concat(Integer.toString(aux1));
-	    				aux = aux.concat("-");
-	    				aux = aux.concat(parts[2]);
-	    				client_order[0].set_status(aux);
-	    			}
-	    			if(Integer.parseInt(parts[1]) <= 4) {
-	    				warehouseIn.set_client_order(client_order[0]);
-	    				warehouseIn.set_pieces_to_be_done(Integer.parseInt(parts[1]));
-	    				warehouseIn.set_flag_supply("1C");
-	    				String status_aux = "Finished-0-";
-	    				status_aux = status_aux.concat(parts[2]);
-	    				client_order[0].set_status(status_aux);
-	    				
-	    			}
+	    			warehouseIn.set_client_order(client_order[0]);
+	    			warehouseIn.set_pieces_to_be_done(Integer.parseInt(parts[1]));
+	    			warehouseIn.set_flag_supply("1C");
+	    			String aux = "Finished-0-";
+	    			aux = aux.concat(parts[2]);
+	    			System.out.println(aux);
+	    			client_order[0].set_status(aux);
 	    		}
 					
 			} else {
@@ -368,15 +341,21 @@ public class ERP {
     					System.out.println("Raw Material: P" + warehouseIn_pieces[i].get_raw());
     					System.out.println("Dispatch Date: " + warehouseIn_pieces[i].get_dispatchDate());
         				System.out.println("Arrival Date: " + warehouseIn_pieces[i].get_arrivalDate());
-        				System.out.println("-----------Client_Order-------------: \n"
-								+  "Client Name: " + warehouseIn_pieces[i].get_client_order().get_client_name() + "\n"
-								+  "Order Number: " + warehouseIn_pieces[i].get_client_order().get_order_number() + "\n"
-								+  "WorkPiece: " + warehouseIn_pieces[i].get_client_order().get_workPiece() + "\n"
-								+  "Quantity: " + warehouseIn_pieces[i].get_client_order().get_quantity() + "\n"
-								+  "Due Date: " + warehouseIn_pieces[i].get_client_order().get_dueDate() + "\n"
-								+  "Late Penalty: " + warehouseIn_pieces[i].get_client_order().get_latePen() + "\n"
-								+  "Early Penalty: " + warehouseIn_pieces[i].get_client_order().get_earlyPen() + "\n"
-								+  "Status: " + warehouseIn_pieces[i].get_client_order().get_status()); 
+        				if(warehouseIn_pieces[i].get_client_order() != null) {
+        					System.out.println("-----------Client_Order-------------: \n"
+    								+  "Client Name: " + warehouseIn_pieces[i].get_client_order().get_client_name() + "\n"
+    								+  "Order Number: " + warehouseIn_pieces[i].get_client_order().get_order_number() + "\n"
+    								+  "WorkPiece: " + warehouseIn_pieces[i].get_client_order().get_workPiece() + "\n"
+    								+  "Quantity: " + warehouseIn_pieces[i].get_client_order().get_quantity() + "\n"
+    								+  "Due Date: " + warehouseIn_pieces[i].get_client_order().get_dueDate() + "\n"
+    								+  "Late Penalty: " + warehouseIn_pieces[i].get_client_order().get_latePen() + "\n"
+    								+  "Early Penalty: " + warehouseIn_pieces[i].get_client_order().get_earlyPen() + "\n"
+    								+  "Status: " + warehouseIn_pieces[i].get_client_order().get_status()); 
+        				} else {
+        					System.out.println("-----------Client_Order-------------: \n");
+        					System.out.println("NUUUUUUUUUUUUULAAAAAAAAAAAAAAAAA");
+        				}
+        				
     				}
     					
     			}catch(NullPointerException e) {
