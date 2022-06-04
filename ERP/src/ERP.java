@@ -26,9 +26,9 @@ public class ERP {
 			int supplier_flag = 0;
 			for(int i = 0; i < len; i++) {
 				String[] parts = client_order[i].get_status().split("-");
-				System.out.println(parts[0] + "-" + parts[1] + " " + i);
+				//System.out.println(parts[0] + "-" + parts[1] + " " + i);
 				if (parts[0].equals("Supplier")) {
-					System.out.println("Condicao de Supplier " + i);
+					//System.out.println("Condicao de Supplier " + i);
 					supplier_flag = 1;
 					client_order_aux = client_order[i];
 					index_aux = i;
@@ -54,7 +54,7 @@ public class ERP {
 				for(int i = 0; i < len1; i++) {
 					String[] parts = client_order[i].get_status().split("-");
 					if (parts[0].equals("Finished")) {
-						System.out.println("Condicao de Finished " + i);
+						//System.out.println("Condicao de Finished " + i);
 						client_order_aux1 = client_order[i];
 						index_aux1 = i;
 						for(int j = 0; j < (len1-index_aux1-1); j++) {
@@ -101,7 +101,7 @@ public class ERP {
 //				}
 				
 			}else {
-				System.out.println("Nao ha finisheds");
+				//System.out.println("Nao ha finisheds");
 			}
 			if(supplier_flag == 1) {
 				for (int i = 1; i < (len-len_finished); i++){
@@ -175,21 +175,21 @@ public class ERP {
 			}
 			
 			
-			for(int i = 0; i < len; i++) {
-				System.out.println(i);
-				System.out.println(client_order[i].get_client_name() + " algorithm");
-	    		System.out.println(client_order[i].get_order_number() + " algorithm");
-	        	System.out.println(client_order[i].get_workPiece() + " algorithm");
-	       		System.out.println(client_order[i].get_quantity() + " algorithm");
-	        	System.out.println(client_order[i].get_dueDate() + " DUE DATE - algorithm");
-	        	System.out.println(client_order[i].get_latePen() + " algorithm");
-	        	System.out.println(client_order[i].get_earlyPen() + " algorithm");
-	        	System.out.println(client_order[i].get_status() + " algorithm");
-			}
+//			for(int i = 0; i < len; i++) {
+//				System.out.println(i);
+//				System.out.println(client_order[i].get_client_name() + " algorithm");
+//	    		System.out.println(client_order[i].get_order_number() + " algorithm");
+//	        	System.out.println(client_order[i].get_workPiece() + " algorithm");
+//	       		System.out.println(client_order[i].get_quantity() + " algorithm");
+//	        	System.out.println(client_order[i].get_dueDate() + " DUE DATE - algorithm");
+//	        	System.out.println(client_order[i].get_latePen() + " algorithm");
+//	        	System.out.println(client_order[i].get_earlyPen() + " algorithm");
+//	        	System.out.println(client_order[i].get_status() + " algorithm");
+//			}
 			//warehouseIn.set_flag_supply("Null");
 			//System.out.println("ASDasdsadsadasdsadsadsadasdasdasdasdasda");
 			String[] parts = client_order[0].get_status().split("-");
-			System.out.println(parts[0] + "asdasdsadsadsadasdasdasdsadasdasdasdasdasdas" + parts[1]);
+			//System.out.println(parts[0] + "asdasdsadsadsadasdasdasdsadasdasdasdasdasdas" + parts[1]);
 			/*if(parts[0].equals("Supplier")) {
 				// Pecas P3, P4 ou P5 - unica possibilidade e mandar vir P2
 				// Pecas P7 - vem de P4 e P4 so vem de P2
@@ -245,7 +245,7 @@ public class ERP {
 	    		}	
 				
 			}else */if (parts[0].equals("None")) {
-				System.out.println("Boas do none");
+				//System.out.println("Boas do none");
 				// Pecas P3, P4 ou P5 - enica possibilidade e mandar vir P2
 				// Pecas P7 - vem de P4 e P4 so vem de P2
 				// Pecas P9 - vem a partir de P7 que vem de P4 que so vem de P2
@@ -256,20 +256,20 @@ public class ERP {
 	    				warehouseIn.set_flag_supply("2C");
 	    				String aux = "Finished-0-";
 	    				aux = aux.concat(parts[2]);
-	    				System.out.println(aux);
+	    				//System.out.println(aux);
 	    				client_order[0].set_status(aux);
 	    		}
 				
 				// Pecas P6 - vamos fazer a partir de P1
 				// Pecas P8 - vem de P6 e P6 vamos fazer a partir de P1
 				if(client_order[0].get_workPiece().equals("P6") || client_order[0].get_workPiece().equals("P8")) {
-	    			System.out.println("Boas do P6");
+	    			//System.out.println("Boas do P6");
 	    			warehouseIn.set_client_order(client_order[0]);
 	    			warehouseIn.set_pieces_to_be_done(Integer.parseInt(parts[1]));
 	    			warehouseIn.set_flag_supply("1C");
 	    			String aux = "Finished-0-";
 	    			aux = aux.concat(parts[2]);
-	    			System.out.println(aux);
+	    			//System.out.println(aux);
 	    			client_order[0].set_status(aux);
 	    		}
 					
@@ -303,10 +303,10 @@ public class ERP {
     		if (seconds == (20*index)) {
     			//System.out.println("ERP");
     			client_order = order_managment.get_Client_Order();
-    			System.out.println(client_order[0].get_status());
+    			//System.out.println(client_order[0].get_status());
     			System.out.println("Boas antes do algoritmo");
     			client_order = algoritmo(client_order, warehouseIn);
-    			System.out.println(client_order[0].get_status());
+    			//System.out.println(client_order[0].get_status());
     			if(client_order.length == order_managment.get_Client_Order().length)
     				order_managment.set_Client_Order(client_order);
     			else {

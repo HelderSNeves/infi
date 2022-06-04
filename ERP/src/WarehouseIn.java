@@ -58,10 +58,21 @@ public class WarehouseIn extends Thread {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
+				int[] operations_null = new int[]{0, 0, 0, 0};
+				int[] operations = new int[4];
 				System.out.println("Cheguei depois do sleep - 1C");
-				int[] operations = new int[]{0, 0, 0, 0};
+				if(client_order.get_workPiece().equals("P6")) {
+					for(int i = 0; i < 4; i++) {
+						operations[i] = 6;
+					}
+				}
+				if(client_order.get_workPiece().equals("P8")) {
+					for(int i = 0; i < 4; i++) {
+						operations[i] = 8;
+					}
+				}
 				Piece peca_p1 = new Piece(1, "WI", operations, 'C', 1, client_order, 0, 0);
-				Piece peca_p1_sem_order = new Piece(1, "WI", operations, 'W', 1, null, 0, 0);
+				Piece peca_p1_sem_order = new Piece(1, "WI", operations_null, 'W', 1, null, 0, 0);
 				System.out.println("AAAAAAAAAAAAAAAAAAAAA    " + pieces_to_be_done + "    AAAAAAAAAAAAAAAAAAAA");
 				int contador_pecas_p1_nao_usadas = 0;
 				int[] pecas_p1_nao_usadas = new int[4];
@@ -129,7 +140,34 @@ public class WarehouseIn extends Thread {
 					}
 					flag_supply = "None";
 				}
-				
+				int len = count_non_null(warehouseIn_pieces);
+				int len_pecas_nao_usadas  = 0;
+				for(int i = 0; i < len; i++) {
+					if (Character.compare(warehouseIn_pieces[i].get_supplier(), 'W') == 0) {
+						len_pecas_nao_usadas++;
+					}
+				}
+				System.out.println("Numero de pecas nao usadas: " + len_pecas_nao_usadas);
+				if (len_pecas_nao_usadas != 0) {
+					Piece piece_aux1;
+					int index_aux1 = 0;
+					int len1 = len;
+					for(int i = 0; i < len1; i++) {
+						if (Character.compare(warehouseIn_pieces[i].get_supplier(), 'W') == 0) {
+							System.out.println("Peca" + i + "por usar, a ser utilizada");
+							piece_aux1 = warehouseIn_pieces[i];
+							index_aux1 = i;
+							for(int j = 0; j < (len1-index_aux1-1); j++) {
+								warehouseIn_pieces[index_aux1+j] = warehouseIn_pieces[index_aux1+j+1];	
+							}
+							warehouseIn_pieces[len1-1] = piece_aux1;
+							len1--;
+							i--;
+						}
+					} 
+				}else {
+					System.out.println("Nao ha pecas por usar");
+				}
 			}
 			else if(flag_supply.equals("2C")) {
 				System.out.println("Cheguei antes do sleep - 2C");
@@ -140,9 +178,35 @@ public class WarehouseIn extends Thread {
 					e.printStackTrace();
 				}
 				System.out.println("Cheguei depois do sleep - 2C");
-				int[] operations = new int[]{0, 0, 0, 0};
+				int[] operations_null = new int[]{0, 0, 0, 0};
+				int[] operations = new int[4];
+				if(client_order.get_workPiece().equals("P3")) {
+					for(int i = 0; i < 4; i++) {
+						operations[i] = 3;
+					}
+				}
+				if(client_order.get_workPiece().equals("P4")) {
+					for(int i = 0; i < 4; i++) {
+						operations[i] = 4;
+					}
+				}
+				if(client_order.get_workPiece().equals("P5")) {
+					for(int i = 0; i < 4; i++) {
+						operations[i] = 5;
+					}
+				}
+				if(client_order.get_workPiece().equals("P7")) {
+					for(int i = 0; i < 4; i++) {
+						operations[i] = 7;
+					}
+				}
+				if(client_order.get_workPiece().equals("P9")) {
+					for(int i = 0; i < 4; i++) {
+						operations[i] = 9;
+					}
+				}
 				Piece peca_p2 = new Piece(2, "WI", operations, 'C', 2, client_order, 0, 0);
-				Piece peca_p2_sem_order = new Piece(2, "WI", operations, 'W', 2, null, 0, 0);
+				Piece peca_p2_sem_order = new Piece(2, "WI", operations_null, 'W', 2, null, 0, 0);
 				System.out.println("AAAAAAAAAAAAAAAAAAAAA    " + pieces_to_be_done + "    AAAAAAAAAAAAAAAAAAAA");
 				int contador_pecas_p2_nao_usadas = 0;
 				int[] pecas_p2_nao_usadas = new int[4];
@@ -212,7 +276,34 @@ public class WarehouseIn extends Thread {
 					}
 					flag_supply = "None";
 				}
-								
+				int len = count_non_null(warehouseIn_pieces);
+				int len_pecas_nao_usadas  = 0;
+				for(int i = 0; i < len; i++) {
+					if (Character.compare(warehouseIn_pieces[i].get_supplier(), 'W') == 0) {
+						len_pecas_nao_usadas++;
+					}
+				}
+				System.out.println("Numero de pecas nao usadas: " + len_pecas_nao_usadas);
+				if (len_pecas_nao_usadas != 0) {
+					Piece piece_aux1;
+					int index_aux1 = 0;
+					int len1 = len;
+					for(int i = 0; i < len1; i++) {
+						if (Character.compare(warehouseIn_pieces[i].get_supplier(), 'W') == 0) {
+							System.out.println("Peca" + i + "por usar, a ser utilizada");
+							piece_aux1 = warehouseIn_pieces[i];
+							index_aux1 = i;
+							for(int j = 0; j < (len1-index_aux1-1); j++) {
+								warehouseIn_pieces[index_aux1+j] = warehouseIn_pieces[index_aux1+j+1];	
+							}
+							warehouseIn_pieces[len1-1] = piece_aux1;
+							len1--;
+							i--;
+						}
+					} 
+				}else {
+					System.out.println("Nao ha pecas por usar");
+				}				
 			}
 		}
 				
