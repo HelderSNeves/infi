@@ -57,3 +57,12 @@ public class InsertingData {
 		}//end try
 	}
 }
+
+
+String sql = "Insert INTO COMMUNICATION_PIECES " + 
+							"VALUES (2,1,'"+position+"',"+type+",9,9,9,'"+supplier+"','P2',0,0,'asdsadasdsadsadsa',18,'P9',8,7,10,10,'Finished-0-0')";
+			stmt.executeUpdate(sql);
+
+String sql = "Insert INTO COMMUNICATION_PIECES " + 
+					"VALUES ("+i+","+type+",'"+position+"',"+operations[0]+","+operations[1]+","+operations[2]+","+operations[3]+",'"+supplier+"',"+raw+","+dispatchDate+","+arrivalDate+",'"+client_order.get_client_name()+"',"+client_order.get_order_number()+",'"+client_order.get_workPiece()+"',"+client_order.get_quantity()+","+client_order.get_dueDate()+","+client_order.get_latePen()+","+client_order.get_earlyPen()+",'"+client_order.get_status()+"')";
+			stmt.executeUpdate(sql);
